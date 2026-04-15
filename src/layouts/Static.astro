@@ -1,0 +1,31 @@
+---
+import { Image } from 'astro:assets';
+import BaseLayout from './Base.astro';
+
+interface Props {
+    title?: string;
+    description?: string;  
+    heroImage?: {
+        height: number;
+        src: string;
+        width: number;
+        format: "avif" | "png" | "webp" | "jpeg" | "jpg" | "svg" | "tiff" | "gif";
+    }	
+}
+
+const { title, description, heroImage } = Astro.props;
+---
+<BaseLayout title={title} description={description}>
+	<style>		
+		.hero-image {
+			width: 100%;
+		}
+		.hero-image img {
+			display: block;
+			margin: 0 auto;
+			border-radius: 12px;
+			box-shadow: var(--box-shadow);
+		}	
+	</style>	
+	<slot />	
+</BaseLayout>

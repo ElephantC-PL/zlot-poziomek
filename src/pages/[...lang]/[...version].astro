@@ -1,0 +1,52 @@
+
+---
+import Layout from '../../layouts/Static.astro';
+import AboutHeroImage from '../../assets/blog-placeholder-about.jpg';
+import { getAllTranslatedPaths } from '../../i18n/utils';
+import { VERSIONS, CURRENT_VERSION } from '../../version.config';
+import { DEFAULT_LOCALE } from '../../i18n/config';
+import DefaultSection from '../../components/DefaultSection.astro';
+import { render } from 'astro:content';
+import { getSections, getMenu } from '../../utilities/sections';
+import type { Lang } from '../../i18n/config';
+
+
+
+export function getStaticPaths() {   	
+	const paths = VERSIONS.flatMap(version => {
+		const translatedRoots = getAllTranslatedPaths(version);
+		return translatedRoots.map(({ params }) => {
+			const { lang } = params;
+			const { [version]: value, ...rest } = params;
+			return ({ 
+				params: { version: version === CURRENT_VERSION ? '' : value , ...rest},
+				props: {version: version, translatedVersion: value, lang: lang || DEFAULT_LOCALE } 
+			})
+		});
+	});  	
+	return paths;
+};
+
+const {version, translatedVersion, lang} = Astro.props;
+
+const sections = await getSections(lang as Lang, version);
+
+const menu = await getMenu(lang as Lang, version);
+
+---
+
+<Layout
+	title={translatedVersion}
+	description="Lorem ipsum dolor sit amet"
+	heroImage={AboutHeroImage}	
+	>	
+	{sections.map(async (section) => {
+		const { Content } = await render(section);	 
+      return (        
+        <DefaultSection data={section.data}>  
+			<Content />            
+		</DefaultSection>             
+      );
+    })}
+</Layout>
+

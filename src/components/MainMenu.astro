@@ -1,0 +1,26 @@
+---
+import type { Lang } from "../i18n/config";
+import { getTranslatedUrlFragment, useTranslations, getRouteFromTranslatedPath, getTranslatedUrl } from "../i18n/utils";
+import HeaderLink from "./HeaderLink.astro";
+import { getMenu } from "../utilities/sections";
+import { VERSIONS, CURRENT_VERSION } from "../version.config";
+
+const lang = Astro.currentLocale as Lang;
+const t = useTranslations(lang);
+
+const path = getRouteFromTranslatedPath(Astro.url) ?? [];
+const isNotVersionPage = path.length > 0 && !VERSIONS.includes(path[0]);
+
+const version = VERSIONS.find(v => v === path[0]) || CURRENT_VERSION;
+const menu =  await getMenu(lang, version);
+---
+
+{      
+    menu.map(item => (
+        <HeaderLink href={
+            (isNotVersionPage ? getTranslatedUrl(lang, []) : '')+
+            '#' + getTranslatedUrlFragment(lang, item)}
+        >{t(`section.${item}`)}</HeaderLink> 
+    ))
+}
+

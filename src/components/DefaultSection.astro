@@ -1,0 +1,9 @@
+---
+import BasicSection from "../layouts/BasicSection.astro";
+const { data } = Astro.props;
+
+---
+
+<BasicSection data={data}>
+  <slot />
+</BasicSection>

@@ -1,0 +1,13 @@
+---
+import type { HTMLAttributes } from 'astro/types';
+
+type Props = HTMLAttributes<'a'>;
+
+const { href, class: className, ...props } = Astro.props;
+
+---
+<li >
+	<a href={href} data-section={href} class="[&.active]:bg-base-300">
+		<slot />
+	</a>
+</li>

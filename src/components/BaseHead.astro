@@ -1,0 +1,106 @@
+---
+// Import the global.css file here so that it is included on
+// all pages through the use of the <BaseHead /> component.
+import '../styles/global.css';
+import FallbackImage from '../assets/blog-placeholder-1.jpg';
+import type { ImageMetadata } from 'astro';
+import type { Lang } from '../i18n/config';
+import { useTranslations } from '../i18n/utils';
+
+interface Props {
+	title: string;
+	description: string;
+	image?: ImageMetadata;
+}
+
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+
+const { title, description, image = FallbackImage } = Astro.props;
+
+const lang = Astro.currentLocale as Lang;
+const t = useTranslations(lang);
+---
+
+<!-- Global Metadata -->
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<link rel="icon" href="/icons/favicon-16.png" sizes="16x16" type="image/png" />
+<link rel="icon" href="/icons/favicon-32.png" sizes="32x32" type="image/png" />
+<link rel="icon" href="/icons/favicon-48.png" sizes="48x48" type="image/png" />
+<link rel="icon" href="/icons/favicon-64.png" sizes="64x64" type="image/png" />
+<link rel="icon" href="/icons/favicon-72.png" sizes="72x72" type="image/png" />
+<link rel="icon" href="/icons/favicon-96.png" sizes="96x96" type="image/png" />
+<link rel="icon" href="/icons/favicon-128.png" sizes="128x128" type="image/png" />
+<link rel="icon" href="/icons/favicon-144.png" sizes="144x144" type="image/png" />
+<link rel="icon" href="/icons/favicon-152.png" sizes="152x152" type="image/png" />
+<link rel="icon" href="/icons/favicon-192.png" sizes="192x192" type="image/png" />
+<link rel="icon" href="/icons/favicon-256.png" sizes="256x256" type="image/png" />
+<link rel="icon" href="/icons/favicon-384.png" sizes="384x384" type="image/png" />
+<link rel="icon" href="/icons/favicon-512.png" sizes="512x512" type="image/png" />
+<link rel="apple-touch-icon" href="/icons/favicon-180.png" sizes="180x180" type="image/png" />
+<link rel="manifest" href="/manifest.webmanifest" />
+<link rel="sitemap" href="/sitemap-index.xml" />
+<link
+	rel="alternate"
+	type="application/rss+xml"
+	title={t('name')}
+	href={new URL('rss.xml', Astro.site)}
+/>
+<meta name="generator" content={Astro.generator} />
+
+<!-- Font preloads -->
+<link rel="preload" href="/fonts/atkinson-regular.woff" as="font" type="font/woff" crossorigin />
+<link rel="preload" href="/fonts/atkinson-bold.woff" as="font" type="font/woff" crossorigin />
+
+<!-- Canonical URL -->
+<link rel="canonical" href={canonicalURL} />
+
+<!-- Primary Meta Tags -->
+<title>{t('name')}</title>
+<meta name={t('name')} content={title} />
+<meta name={t('meta.description')} content={description} />
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website" />
+<meta property="og:url" content={Astro.url} />
+<meta property="og:title" content={title} />
+<meta property="og:description" content={description} />
+<meta property="og:image" content={new URL(image.src, Astro.url)} />
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:url" content={Astro.url} />
+<meta property="twitter:title" content={title} />
+<meta property="twitter:description" content={description} />
+<meta property="twitter:image" content={new URL(image.src, Astro.url)} />
+
+<script>
+  (function() {
+    const THEME_KEY = 'user-theme';
+    const DARK = 'dark';
+    const LIGHT = 'light';
+
+    const stored = localStorage.getItem(THEME_KEY);
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    const theme = stored || (prefersDark ? DARK : LIGHT);
+
+    // Wyłącz animację swap tymczasowo
+    const style = document.createElement('style');
+    style.id = 'disable-swap-animation';
+    style.innerHTML = '.swap-on, .swap-off { transition: none !important; }';
+    document.head.appendChild(style);
+
+    // Ustaw theme i checkbox
+    document.documentElement.setAttribute('data-theme', theme);
+  const checkbox = document.querySelector('.theme-controller') as HTMLInputElement | null;
+    if (checkbox) checkbox.checked = theme === DARK;
+
+    // Włącz animację po 50ms
+    setTimeout(() => {
+      const s = document.getElementById('disable-swap-animation');
+      if (s) s.remove();
+    }, 50);
+  })();
+</script>
+
+  <script type="module" src="/src/scripts/theme.js"></script>

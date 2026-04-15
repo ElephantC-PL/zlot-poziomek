@@ -1,0 +1,38 @@
+---
+
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import CookieConsent from '../components/CookieConsent.astro';
+import type { Lang } from '../i18n/config';
+import "../assets/app.css";
+import MenuDrawer from '../components/MenuDrawer.astro';
+
+interface Props {
+  title?: string;
+  description?: string; 
+}
+const lang = Astro.currentLocale as Lang;
+const { title = "My Website", description = "" } = Astro.props;
+---
+
+<html lang={lang} data-theme="dark">
+	<head>
+		<BaseHead title={title} description={description} />		
+	</head>
+
+	<body>
+		<MenuDrawer>
+			 <Header/>				
+			<main class="pt-20">				
+				<slot/>
+			</main>
+			<Footer />
+			<CookieConsent/>
+		</MenuDrawer>
+	</body>
+	<script>
+    import { initScrollSpy } from "../scripts/scrollSpy.ts";
+    initScrollSpy();
+	</script>
+</html>
