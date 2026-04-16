@@ -12,7 +12,7 @@ export const ui = {
     },
     section: {
         banner: 'Baner',
-        about: 'O nas',
+        about: 'O zlocie',
         directions: 'Dojazd',
         accomodation: 'Zakwaterowanie',
         cattering: 'Wyzywienie',
