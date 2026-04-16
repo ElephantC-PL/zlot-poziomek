@@ -5,14 +5,35 @@ const version = defineCollection({
 	loader: glob({ base: './src/content/version', pattern: '**/*.{md,mdx}' }),	
   	schema: z.discriminatedUnion('type', [
 		z.object({
-			type: z.literal('section1'),      
+			type: z.literal('banner'),      
 		}),
 		z.object({
-			type: z.literal('section2'),      
+			type: z.literal('about'),      
 		}),
 		z.object({
-			type: z.literal('section3'),      
+			type: z.literal('directions'),      
 		}),		
+		z.object({
+			type: z.literal('accomodation'),      
+		}),
+		z.object({
+			type: z.literal('cattering'),      
+		}),
+		z.object({
+			type: z.literal('schedule'),      
+		}),
+		z.object({
+			type: z.literal('tracks'),      
+		}),
+		z.object({
+			type: z.literal('registry'),      
+		}),
+		z.object({
+			type: z.literal('tShirts'),      
+		}),
+		z.object({
+			type: z.literal('contact'),      
+		}),
   	]),
 });
 

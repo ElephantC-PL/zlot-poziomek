@@ -30,13 +30,9 @@ export const blogRoutes: Routes = {
 };
 
 export const versionRoutes: Routes = {
-  'v2026': {
-    pl: '2026',
-    en: '2026',
-  },
-  'v2025': {
-    pl: '2025',
-    en: '2025',
+  'v2017': {
+    pl: '2017',
+    en: '2017',
   },
   'vDefault': {
     pl: 'domyslna',
@@ -94,17 +90,45 @@ export const routes: Routes = {
 };
 
 export const fragmentRoutes: Routes = {
-  section1: {
-    pl: 'sekcja-1',
-    en: 'section-1',
+  banner: {
+    pl: 'baner',
+    en: 'banner',
   },
-  section2: {
-    pl: 'sekcja-2',
-    en: 'section-2',
+  about: {
+    pl: 'o-zlocie',
+    en: 'about',
   },
-  section3: {
-    pl: 'sekcja-3',
-    en: 'section-3',
+  directions: {
+    pl: 'dojazd',
+    en: 'directions',
+  },
+  accomodation: {
+    pl: 'zakwaterowanie',
+    en: 'accomodation', 
+  },
+  cattering: {
+    pl: 'wyzywienie',
+    en: 'catering',
+  },
+  schedule: {
+    pl: 'program',
+    en: 'schedule',
+  },  
+  tracks: {
+    pl: 'trasy',
+    en: 'tracks',
+  },
+  registry: {
+    pl: 'rejestracja',
+    en: 'registry',
+  },
+  tShirts: {
+    pl: 'koszulki',
+    en: 't-shirts',
+  },
+  contact: {
+    pl: 'kontakt',
+    en: 'contact',
   }
 };
 

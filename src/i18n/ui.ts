@@ -5,22 +5,22 @@
 */
 export const ui = {
   pl: {
-    name: 'Astro Blog',
-    nav: {
-      home: 'Start',
-      about: 'O nas',
-      blog: 'Blog',
-      nested: 'Zagnieżdżone',
-    },
+    name: 'Astro Blog',    
     version: {
       vDefault: 'Domyślna',
-      v2026: '2026',
-      v2025: '2025'
+      v2017: '2017'
     },
     section: {
-      section1: 'Sekcja 1',
-      section2: 'Sekcja 2',
-      section3: 'Sekcja 3',
+        banner: 'Baner',
+        about: 'O nas',
+        directions: 'Dojazd',
+        accomodation: 'Zakwaterowanie',
+        cattering: 'Wyzywienie',
+        schedule: 'Program',
+        tracks: 'Trasy',
+        registry: 'Rejestracja',
+        tShirts: 'Koszulki',
+        contact: 'Kontakt'
     },
     footer: {
       copyright: 'Twoje imię tutaj. Wszelkie prawa zastrzeżone.',
@@ -42,22 +42,22 @@ export const ui = {
     }
   },
   en: {
-    name: 'Astro Blog',
-    nav: {
-      home: 'Home',
-      about: 'About us',
-      blog: 'Blog',
-      nested: 'Nested',
-    },
+    name: 'Astro Blog',   
     version: {
       vDefault: 'Default',
-      v2026: '2026',
-      v2025: '2025'
+      v2017: '2017',      
     },
     section: {
-      section1: 'Section 1',
-      section2: 'Section 2',
-      section3: 'Section 3',
+      banner: 'Banner',
+      about: 'About us',
+      directions: 'Directions',
+      accomodation: 'Accommodation',
+      cattering: 'Catering',
+      schedule: 'Schedule',
+      tracks: 'Tracks',
+      registry: 'Registry',
+      tShirts: 'T-Shirts',
+      contact: 'Contact'
     },
     footer: {
       copyright: 'Your name here. All rights reserved.',
