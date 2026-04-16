@@ -49,7 +49,7 @@ export const ui = {
     },
     section: {
       banner: 'Banner',
-      about: 'About us',
+      about: 'About',
       directions: 'Directions',
       accomodation: 'Accommodation',
       cattering: 'Catering',

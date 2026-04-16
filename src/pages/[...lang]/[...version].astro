@@ -9,6 +9,7 @@ import DefaultSection from '../../components/DefaultSection.astro';
 import { render } from 'astro:content';
 import { getSections, getMenu } from '../../utilities/sections';
 import type { Lang } from '../../i18n/config';
+import BannerSection from '../../components/BannerSection.astro';
 
 
 
@@ -41,7 +42,15 @@ const menu = await getMenu(lang as Lang, version);
 	heroImage={AboutHeroImage}	
 	>	
 	{sections.map(async (section) => {
-		const { Content } = await render(section);	 
+		const { Content } = await render(section);	
+		if (section.data.type === 'banner') { 
+			return (
+				<BannerSection data={section.data}>  
+					<Content />            
+				</BannerSection> 
+			);
+		}
+			
       return (        
         <DefaultSection data={section.data}>  
 			<Content />            

@@ -3,38 +3,41 @@ import { defineCollection, z } from 'astro:content';
 
 const version = defineCollection({
 	loader: glob({ base: './src/content/version', pattern: '**/*.{md,mdx}' }),	
-  	schema: z.discriminatedUnion('type', [
-		z.object({
-			type: z.literal('banner'),      
-		}),
-		z.object({
-			type: z.literal('about'),      
-		}),
-		z.object({
-			type: z.literal('directions'),      
-		}),		
-		z.object({
-			type: z.literal('accomodation'),      
-		}),
-		z.object({
-			type: z.literal('cattering'),      
-		}),
-		z.object({
-			type: z.literal('schedule'),      
-		}),
-		z.object({
-			type: z.literal('tracks'),      
-		}),
-		z.object({
-			type: z.literal('registry'),      
-		}),
-		z.object({
-			type: z.literal('tShirts'),      
-		}),
-		z.object({
-			type: z.literal('contact'),      
-		}),
-  	]),
+  	schema: ({ image }) =>
+		z.discriminatedUnion('type', [
+			z.object({
+				type: z.literal('banner'),  
+				image: image().optional(),   
+				alt: z.string().optional(), 
+			}),
+			z.object({
+				type: z.literal('about'),      
+			}),
+			z.object({
+				type: z.literal('directions'),      
+			}),		
+			z.object({
+				type: z.literal('accomodation'),      
+			}),
+			z.object({
+				type: z.literal('cattering'),      
+			}),
+			z.object({
+				type: z.literal('schedule'),      
+			}),
+			z.object({
+				type: z.literal('tracks'),      
+			}),
+			z.object({
+				type: z.literal('registry'),      
+			}),
+			z.object({
+				type: z.literal('tShirts'),      
+			}),
+			z.object({
+				type: z.literal('contact'),      
+			}),
+		]),
 });
 
 const blog = defineCollection({	
