@@ -1,6 +1,6 @@
 ---
 type: banner
-image: '../../../../assets/banner2017.jpg'
+image: '../../../../assets/2017/banner2017.jpg'
 alt: 'Zlot poziomek 2017'
 ---
 

@@ -8,7 +8,10 @@ export default {
     extend: {
       typography: {
         DEFAULT: {
-          css: {            
+          css: {    
+            img: { margin: 0},
+            h2: { marginTop: "1em"},
+          //  h1: { fontSize: '40px', }, h2: { color: 'red'}, p: {color: 'blue'},        
           },
         },
       },

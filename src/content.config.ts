@@ -11,7 +11,9 @@ const version = defineCollection({
 				alt: z.string().optional(), 
 			}),
 			z.object({
-				type: z.literal('about'),      
+				type: z.literal('about'),   
+				image: image().optional(),   
+				alt: z.string().optional(), 
 			}),
 			z.object({
 				type: z.literal('directions'),      
