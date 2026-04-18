@@ -15,7 +15,7 @@ export const ui = {
         about: 'O zlocie',
         directions: 'Dojazd',
         accomodation: 'Zakwaterowanie',
-        cattering: 'Wyzywienie',
+        cattering: 'Wyżywienie',
         schedule: 'Program',
         tracks: 'Trasy',
         registry: 'Rejestracja',

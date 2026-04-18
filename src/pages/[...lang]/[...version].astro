@@ -10,6 +10,7 @@ import { render } from 'astro:content';
 import { getSections, getMenu } from '../../utilities/sections';
 import type { Lang } from '../../i18n/config';
 import BannerSection from '../../components/BannerSection.astro';
+import WithMapSection from '../../components/WithMapSection.astro';
 
 
 
@@ -29,10 +30,7 @@ export function getStaticPaths() {
 };
 
 const {version, translatedVersion, lang} = Astro.props;
-
 const sections = await getSections(lang as Lang, version);
-
-const menu = await getMenu(lang as Lang, version);
 
 ---
 
@@ -43,19 +41,26 @@ const menu = await getMenu(lang as Lang, version);
 	>	
 	{sections.map(async (section) => {
 		const { Content } = await render(section);	
-		if (section.data.type === 'banner') { 
-			return (
-				<BannerSection data={section.data}>  
-					<Content />            
-				</BannerSection> 
-			);
+		switch(section.data.type) {
+			case 'banner':
+				return (
+					<BannerSection data={section.data}>  
+						<Content />            
+					</BannerSection> 
+				);
+			case 'directions':
+				return (
+					<WithMapSection data={section.data}>  
+						<Content />            
+					</WithMapSection> 
+				);
+			default:
+				return (
+					<DefaultSection data={section.data}>  
+						<Content />            
+					</DefaultSection> 
+				);
 		}
-			
-      return (        
-        <DefaultSection data={section.data}>  
-			<Content />            
-		</DefaultSection>             
-      );
     })}
 </Layout>
 

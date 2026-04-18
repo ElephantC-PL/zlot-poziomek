@@ -1,0 +1,23 @@
+---
+import type { Lang } from "../i18n/config";
+import { useTranslations } from "../i18n/utils";
+import BasicSection from "../layouts/BasicSection.astro";
+
+const { data } = Astro.props;
+const lang = Astro.currentLocale as Lang;
+const t = useTranslations(lang);
+---
+
+<BasicSection data={data}>
+  <div class="flex flex-col md:flex-row md:gap-10 items-center">   
+    <div class={data.map ? "md:w-1/2" : "w-full"}>
+      <h2 class="text-center">{t('section.' + data.type)}</h2>      
+      <slot />
+    </div>
+    {data.map && 
+      <div class="md:w-1/2 flex justify-center rounded-xl overflow-hidden bg-gray-100">
+        <iframe src={data.map} width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    }
+  </div>  
+</BasicSection>
