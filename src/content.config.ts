@@ -18,7 +18,7 @@ const version = defineCollection({
 			}),
 			z.object({
 				type: z.literal('directions'), 
-				map: z.string().url(),    
+				map: z.string().url().optional(),     
 			}),		
 			z.object({
 				type: z.literal('accomodation'), 
