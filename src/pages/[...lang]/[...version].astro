@@ -5,12 +5,13 @@ import AboutHeroImage from '../../assets/blog-placeholder-about.jpg';
 import { getAllTranslatedPaths } from '../../i18n/utils';
 import { VERSIONS, CURRENT_VERSION } from '../../version.config';
 import { DEFAULT_LOCALE } from '../../i18n/config';
-import DefaultSection from '../../components/DefaultSection.astro';
+import DefaultSection from '../../components/sections/DefaultSection.astro';
 import { render } from 'astro:content';
 import { getSections, getMenu } from '../../utilities/sections';
 import type { Lang } from '../../i18n/config';
-import BannerSection from '../../components/BannerSection.astro';
-import WithMapSection from '../../components/WithMapSection.astro';
+import BannerSection from '../../components/sections/BannerSection.astro';
+import WithMapSection from '../../components/sections/DirectionsSection.astro';
+import TracksSection from '../../components/sections/TracksSection.astro';
 
 
 
@@ -53,6 +54,12 @@ const sections = await getSections(lang as Lang, version);
 					<WithMapSection data={section.data}>  
 						<Content />            
 					</WithMapSection> 
+				);
+			case 'tracks':				
+				return (
+					<TracksSection data={section.data}>  
+						<Content />            
+					</TracksSection> 
 				);
 			default:
 				return (

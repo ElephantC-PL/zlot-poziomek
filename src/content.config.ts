@@ -34,7 +34,19 @@ const version = defineCollection({
 				type: z.literal('schedule'),      
 			}),
 			z.object({
-				type: z.literal('tracks'),      
+				type: z.literal('tracks'),  
+				days: z.array(
+					z.object({
+						name: z.string(),
+						routes: z.array(
+							z.object({
+								name: z.string().optional(),
+								map: z.string().url().optional(),
+								link: z.string().url().optional(),
+							})
+						),
+					})
+				).optional(),      
 			}),
 			z.object({
 				type: z.literal('registry'),      

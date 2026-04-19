@@ -1,0 +1,38 @@
+---
+import type { Lang } from "../../i18n/config";
+import { useTranslations } from "../../i18n/utils";
+import BasicSection from "../../layouts/BasicSection.astro";
+
+const { data } = Astro.props;
+const lang = Astro.currentLocale as Lang;
+const t = useTranslations(lang);
+
+type dayType = {
+    name: string;
+    routes: routesType[]
+};
+
+type routesType = {
+    name: string;
+    map: string;
+    link: string;
+}
+---
+
+<BasicSection data={data}>
+    <h2 class="text-center">{t('section.' + data.type)}</h2>
+    {data.days.map((day: dayType) =>(
+        <h3>{day.name}:</h3>       
+        <div>
+            {day.routes.map((route: routesType) => (
+             <div>
+                <h4>{route.name}:</h4>     
+                <a href={route.link} target="_blank">{route.link}</a>          
+            </div>  
+         ))}     
+        </div>
+    ))}
+    <div>        
+        <slot />
+    </div>
+</BasicSection>
