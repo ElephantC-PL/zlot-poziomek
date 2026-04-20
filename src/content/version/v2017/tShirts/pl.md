@@ -1,5 +1,14 @@
 ---
 type: tShirts
+image: '../../../../assets/2017/koszulka.jpg'
+alt: 'Koszulka zlotowa 2017'
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Koszulka w tym roku kosztuje:
+- zielona, dla dorosłych - 30 zł
+- biała, dla dzieci lub juniorów - 20 zł
+
+W tej cenie jest koszt samej koszulki i niewielka kwota na cele organizacyjne.  
+Logo na koszulkę zaprojektowała nam "Dudysia", żona naszego kolegi - Nahtaha. Dziękujemy!.  
+Koszulkę wybieramy zgodnie z tabelami rozmiarów i wpisujemy do arkusza rejestracyjnego.  
+Płacimy w trakcie meldowania się w bazie zlotu.

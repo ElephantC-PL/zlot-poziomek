@@ -12,6 +12,7 @@ import type { Lang } from '../../i18n/config';
 import BannerSection from '../../components/sections/BannerSection.astro';
 import WithMapSection from '../../components/sections/DirectionsSection.astro';
 import TracksSection from '../../components/sections/TracksSection.astro';
+import ContactSection from '../../components/sections/ContactSection.astro';
 
 
 
@@ -60,6 +61,12 @@ const sections = await getSections(lang as Lang, version);
 					<TracksSection data={section.data}>  
 						<Content />            
 					</TracksSection> 
+				);
+			case 'contact':						
+				return (
+					<ContactSection data={section.data}>  
+						<Content />            
+					</ContactSection> 
 				);
 			default:
 				return (

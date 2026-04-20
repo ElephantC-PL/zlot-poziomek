@@ -1,5 +1,18 @@
 ---
 type: tracks
----
+days:
+  - name: 3 lipca (czwartek)
+    routes:      
+      - map: "https://mapy.com/s/cozageheto"      
+        gpx: "03_07_2025_czwartek.gpx"
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  - name: 4 lipca (piątek)
+    routes:
+      - map: "https://mapy.com/s/jubulomozu"      
+        gpx: "04_07_2025_piatek.gpx"
+
+  - name: 5 lipca (sobota)
+    routes:
+      - map: "https://mapy.com/s/cezoruzelo"      
+        gpx: "05_07_2025_sobota.gpx"
+---

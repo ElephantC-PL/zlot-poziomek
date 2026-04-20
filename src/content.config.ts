@@ -1,6 +1,5 @@
 import { glob } from 'astro/loaders';
 import { defineCollection, z } from 'astro:content';
-import { map } from 'astro:schema';
 
 const version = defineCollection({
 	loader: glob({ base: './src/content/version', pattern: '**/*.{md,mdx}' }),	
@@ -54,10 +53,17 @@ const version = defineCollection({
 				type: z.literal('registry'),      
 			}),
 			z.object({
-				type: z.literal('tShirts'),      
+				type: z.literal('tShirts'),  
+				image: image().optional(),   
+				alt: z.string().optional(),    
 			}),
 			z.object({
-				type: z.literal('contact'),      
+				type: z.literal('contact'),    
+				image: image().optional(),   
+				alt: z.string().optional(), 
+				nameLines: z.array(z.string()),
+				email: z.string().email(),
+				phone: z.string(),
 			}),
 		]),
 });
