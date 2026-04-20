@@ -15,6 +15,7 @@ const version = defineCollection({
 				type: z.literal('about'),   
 				image: image().optional(),   
 				alt: z.string().optional(), 
+				banner: image().optional(),
 			}),
 			z.object({
 				type: z.literal('directions'), 
@@ -43,6 +44,7 @@ const version = defineCollection({
 								name: z.string().optional(),
 								map: z.string().url().optional(),
 								link: z.string().url().optional(),
+								gpx: z.string().optional(),
 							})
 						),
 					})

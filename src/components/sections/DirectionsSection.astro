@@ -2,6 +2,7 @@
 import type { Lang } from "../../i18n/config";
 import { useTranslations } from "../../i18n/utils";
 import BasicSection from "../../layouts/BasicSection.astro";
+import MapIframe from "../MapIframe.astro";
 
 const { data } = Astro.props;
 const lang = Astro.currentLocale as Lang;
@@ -15,8 +16,8 @@ const t = useTranslations(lang);
       <slot />
     </div>
     {data.map && 
-      <div class="md:w-1/2 flex justify-center rounded-xl overflow-hidden bg-gray-100">
-        <iframe src={data.map} width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <div class="md:w-1/2 flex justify-center">
+        <MapIframe url={data.map} />
       </div>
     }
   </div>  

@@ -34,6 +34,10 @@ export const versionRoutes: Routes = {
     pl: '2017',
     en: '2017',
   },
+  'v2025': {
+    pl: '2025',
+    en: '2025',
+  },
   'vDefault': {
     pl: 'domyslna',
     en: 'default',

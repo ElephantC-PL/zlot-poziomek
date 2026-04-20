@@ -8,19 +8,23 @@ export const ui = {
     name: 'Astro Blog',    
     version: {
       vDefault: 'Domyślna',
-      v2017: '2017'
+      v2017: '2017',
+      v2025: '2025'
     },
     section: {
         banner: 'Baner',
         about: 'O zlocie',
         directions: 'Dojazd',
-        accomodation: 'Zakwaterowanie',
+        accomodation: 'Nocleg',
         cattering: 'Wyżywienie',
         schedule: 'Program',
         tracks: 'Trasy',
         registry: 'Rejestracja',
         tShirts: 'Koszulki',
         contact: 'Kontakt'
+    },
+    sectionsFragments: {
+      getGpxFile: 'Pobierz trasę w postaci GPX'
     },
     footer: {
       copyright: 'Twoje imię tutaj. Wszelkie prawa zastrzeżone.',
@@ -45,7 +49,8 @@ export const ui = {
     name: 'Astro Blog',   
     version: {
       vDefault: 'Default',
-      v2017: '2017',      
+      v2017: '2017',
+      v2025: '2025'      
     },
     section: {
       banner: 'Banner',
@@ -58,6 +63,9 @@ export const ui = {
       registry: 'Registry',
       tShirts: 'T-Shirts',
       contact: 'Contact'
+    },
+     sectionsFragments: {
+      getGpxFile: 'Get the route as a GPX file'
     },
     footer: {
       copyright: 'Your name here. All rights reserved.',
