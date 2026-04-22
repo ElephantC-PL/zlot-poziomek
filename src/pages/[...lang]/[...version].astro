@@ -9,10 +9,10 @@ import DefaultSection from '../../components/sections/DefaultSection.astro';
 import { render } from 'astro:content';
 import { getSections, getMenu } from '../../utilities/sections';
 import type { Lang } from '../../i18n/config';
-import BannerSection from '../../components/sections/BannerSection.astro';
 import WithMapSection from '../../components/sections/DirectionsSection.astro';
 import TracksSection from '../../components/sections/TracksSection.astro';
 import ContactSection from '../../components/sections/ContactSection.astro';
+import TopSection from '../../components/sections/TopSection.astro';
 
 
 
@@ -44,11 +44,11 @@ const sections = await getSections(lang as Lang, version);
 	{sections.map(async (section) => {
 		const { Content } = await render(section);	
 		switch(section.data.type) {
-			case 'banner':
+			case 'about':
 				return (
-					<BannerSection data={section.data}>  
+					<TopSection data={section.data}>  
 						<Content />            
-					</BannerSection> 
+					</TopSection> 
 				);
 			case 'directions':
 				return (

@@ -1,11 +1,10 @@
 ---
 import type { Lang } from "../i18n/config";
-import { getTranslatedUrlFragment, useTranslations } from "../i18n/utils";
+import { getTranslatedUrlFragment } from "../i18n/utils";
 
-const { data } = Astro.props;
+const { sectionType, withoutId } = Astro.props;
 const lang = Astro.currentLocale as Lang;
-const id = getTranslatedUrlFragment(lang, data.type);
-const t = useTranslations(lang);
+const id = getTranslatedUrlFragment(lang, sectionType) ;
 
 ---
 <style>  
@@ -17,7 +16,7 @@ const t = useTranslations(lang);
 		color: rgb(var(--gray-dark));
 	}		
 </style>
-<section class="basic-section scroll-mt-24 prose" id={id}>	
+<section class="basic-section scroll-mt-24 prose" id={withoutId ? undefined : id}>	
 	<slot />	
 	<div class="divider"></div>
 </section>

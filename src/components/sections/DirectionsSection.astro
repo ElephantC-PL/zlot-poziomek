@@ -9,7 +9,7 @@ const lang = Astro.currentLocale as Lang;
 const t = useTranslations(lang);
 ---
 
-<BasicSection data={data}>
+<BasicSection sectionType={data.type}>
   <div class="flex flex-col md:flex-row md:gap-10 items-center">   
     <div class={data.map ? "md:w-1/2" : "w-full"}>
       <h2 class="text-center">{t('section.' + data.type)}</h2>      

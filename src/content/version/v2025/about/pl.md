@@ -1,5 +1,9 @@
 ---
 type: about
+banner: {
+    src: '../../../../assets/2025/banner.jpg',
+    alt: 'Zlot poziomek 2025'
+} 
 ---
 
 Tegoroczny Zlot Miłośników Rowerów Poziomych odbędzie się na Podkarpaciu,

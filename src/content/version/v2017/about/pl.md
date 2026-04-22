@@ -4,6 +4,10 @@ image: {
     src: '../../../../assets/2017/Logo2f.jpg',
     alt: 'X Zlot rowerów poziomych Wilga 2017'
 } 
+banner: {
+    src: '../../../../assets/2017/banner2017.jpg',
+    alt: 'Zlot poziomek 2017'
+}
 ---
 
 Tegoroczny X Ogólnopolski Zlot Miłośników Rowerów Poziomych odbędzie się w Wildze, w dniach od środy, 28 czerwca do niedzieli, 02 lipca.

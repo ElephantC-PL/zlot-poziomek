@@ -1,0 +1,22 @@
+---
+import { Image } from 'astro:assets';
+import DefaultSection from './DefaultSection.astro';
+import { undefined } from 'astro:schema';
+import type { Lang } from '../../i18n/config';
+import { getTranslatedUrlFragment } from '../../i18n/utils';
+
+const { data } = Astro.props;
+const lang = Astro.currentLocale as Lang;
+const id = getTranslatedUrlFragment(lang, data.type);
+
+
+---
+<section id={id}>
+	{ data.banner && 
+		<div class="image">
+			<Image src={data.banner.src} alt={data.banner.alt || "Banner Image"} />
+		</div>
+	}
+	<DefaultSection data={data} withoutId={true}><slot /></DefaultSection>	
+</section>	
+		
