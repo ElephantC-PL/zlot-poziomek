@@ -12,7 +12,7 @@ const t = useTranslations(lang);
 <BasicSection data={data}>
   <div class="flex flex-col md:flex-row gap-8 items-center justify-center">
     {data.image && <div class="md:w-1/4 flex justify-center rounded-full overflow-hidden bg-gray-100">
-      <Image class="w-full max-h-80 object-contain md:max-h-none" src={data.image} alt={data.alt || "Section ilustration"} />
+      <Image class="w-full max-h-80 object-contain md:max-h-none" src={data.image.src} alt={data.image.alt || "Section ilustration"} />
     </div>}
     <div class={(data.image ? "md:w-1/4" : "w-full") + " flex flex-col gap-4"}>
         <h2 class="text-center">{t('section.' + data.type)}</h2>        

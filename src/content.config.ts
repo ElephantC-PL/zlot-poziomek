@@ -7,14 +7,21 @@ const version = defineCollection({
 		z.discriminatedUnion('type', [
 			z.object({
 				type: z.literal('banner'),  
-				image: image().optional(),   
-				alt: z.string().optional(), 
+				image: z.object({
+					src: image(),   
+					alt: z.string(), 
+				}).optional(),
 			}),
 			z.object({
 				type: z.literal('about'),   
-				image: image().optional(),   
-				alt: z.string().optional(), 
-				banner: image().optional(),
+				image: z.object({
+					src: image(),   
+					alt: z.string(), 
+				}).optional(),
+				banner: z.object({
+					src: image(),   
+					alt: z.string(), 
+				}).optional(),
 			}),
 			z.object({
 				type: z.literal('directions'), 
@@ -22,13 +29,17 @@ const version = defineCollection({
 			}),		
 			z.object({
 				type: z.literal('accomodation'), 
-				image: image().optional(),   
-				alt: z.string().optional(),      
+				image: z.object({
+					src: image(),   
+					alt: z.string(), 
+				}).optional(),
 			}),
 			z.object({
 				type: z.literal('cattering'),      
-				image: image().optional(),   
-				alt: z.string().optional(),      
+				image: z.object({
+					src: image(),   
+					alt: z.string(), 
+				}).optional(),
 			}),
 			z.object({
 				type: z.literal('schedule'),      
@@ -54,13 +65,17 @@ const version = defineCollection({
 			}),
 			z.object({
 				type: z.literal('tShirts'),  
-				image: image().optional(),   
-				alt: z.string().optional(),    
+				image: z.object({
+					src: image(),   
+					alt: z.string(), 
+				}).optional(),
 			}),
 			z.object({
 				type: z.literal('contact'),    
-				image: image().optional(),   
-				alt: z.string().optional(), 
+			image: z.object({
+					src: image(),   
+					alt: z.string(), 
+				}).optional(),		
 				nameLines: z.array(z.string()),
 				email: z.string().email(),
 				phone: z.string(),

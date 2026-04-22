@@ -1,7 +1,9 @@
 ---
 type: accomodation
-image: '../../../../assets/2017/pw.jpg'
-alt: 'Ośrodek wypoczynkowy PW'
+image: {
+    src: '../../../../assets/2017/pw.jpg',
+    alt: 'Ośrodek wypoczynkowy PW'
+} 
 ---
 
 Mamy specjalny cennik wynegocjowany dla grupy o nazwie "POZIOMKI".

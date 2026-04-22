@@ -1,7 +1,9 @@
 ---
 type: tShirts
-image: '../../../../assets/2017/koszulka.jpg'
-alt: 'Koszulka zlotowa 2017'
+image: {
+    src: '../../../../assets/2017/koszulka.jpg',
+    alt: 'Koszulka zlotowa 2017'
+} 
 ---
 
 Koszulka w tym roku kosztuje:

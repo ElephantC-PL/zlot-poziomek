@@ -1,7 +1,9 @@
 ---
 type: contact
-image: '../../../../assets/2017/WiesiekA.jpg'
-alt: 'Wiesław Adamczyk'
+image: {
+    src: '../../../../assets/2017/WiesiekA.jpg',
+    alt: 'Wiesław Adamczyk'
+} 
 nameLines: 
     - 'Wiesław Adamczyk'
     - '"Dziasiek"'

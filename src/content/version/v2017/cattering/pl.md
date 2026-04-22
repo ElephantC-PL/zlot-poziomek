@@ -1,7 +1,9 @@
 ---
 type: cattering
-image: '../../../../assets/2017/pizza.jpg'
-alt: 'Jedzą pizzę'
+image: {
+    src: '../../../../assets/2017/pizza.jpg',
+    alt: 'Jedzą pizzę'
+} 
 ---
 
 Śniadania i kolacje przygotowujemy we własnym zakresie.

@@ -1,7 +1,9 @@
 ---
 type: tShirts
-image: '../../../../assets/2025/koszulka.png'
-alt: 'Koszulka zlotowa 2025'
+image: {
+    src: '../../../../assets/2025/koszulka.png',
+    alt: 'Koszulka zlotowa 2025'
+} 
 ---
 
 projekt koszulki zatwierdzony  

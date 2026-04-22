@@ -5,5 +5,5 @@ const { data} = Astro.props;
 ---
 
 <div class="image">
-	{data.image && <Image src={data.image} alt={data.alt || "Banner Image"} />}
+	{data.image && <Image src={data.image.src} alt={data.image.alt || "Banner Image"} />}
 </div>

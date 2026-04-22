@@ -1,7 +1,9 @@
 ---
 type: accomodation
-image: '../../../../assets/2025/kolo.png'
-alt: 'Ośrodek Rekreacyjno-Wypoczynkowy “JAŁOWCE”'
+image: {
+    src:  '../../../../assets/2025/kolo.png',
+    alt: 'Ośrodek Rekreacyjno-Wypoczynkowy “JAŁOWCE”'
+} 
 ---
 
 Bazą noclegową tegorocznego zlotu będzie Ośrodek Rekreacyjno – Wypoczynkowy „Jałowce”. Położony na północnym skraju Pogórza Strzyżowskiego, w małej miejscowości Kozłów, w Gminie Dębica, w dolinie rzeki Wisłoki

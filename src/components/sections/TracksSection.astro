@@ -34,7 +34,7 @@ type routesType = {
                 {route.name && <h4>{route.name}:</h4>}  
                 {route.map && <MapIframe url={route.map} />} 
                 {route.link && <a href={route.link} target="_blank">{route.link}</a>}
-                {route.gpx && <a href={'files/gpx/' + route.gpx} download={route.gpx}>{t('sectionsFragments.getGpxFile')}</a>}
+                {route.gpx && <a href={route.gpx} download={route.gpx.split("/").pop()}>{t('sectionsFragments.getGpxFile')}</a>}
             </div>  
          ))}     
         </div>
