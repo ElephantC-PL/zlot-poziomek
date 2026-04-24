@@ -1,4 +1,4 @@
-export const VERSIONS = ['vDefault', 'v2017', 'v2025'];
+export const VERSIONS = ['vDefault', 'v2017', 'v2025', 'v2026'];
 export const CURRENT_VERSION = 'v2017';
 export const SECTIONS_ORDER = [  
   'about',

@@ -9,7 +9,8 @@ export const ui = {
     version: {
       vDefault: 'Domyślna',
       v2017: '2017',
-      v2025: '2025'
+      v2025: '2025',
+      v2026: '2026'
     },
     section: {
         banner: 'Baner',
@@ -50,7 +51,8 @@ export const ui = {
     version: {
       vDefault: 'Default',
       v2017: '2017',
-      v2025: '2025'      
+      v2025: '2025',
+      v2026: '2026'    
     },
     section: {
       banner: 'Banner',
