@@ -4,19 +4,19 @@ import { useTranslations } from "../../i18n/utils";
 import BasicSection from "../../layouts/BasicSection.astro";
 import { Image } from 'astro:assets';
 
-const { data, withoutId } = Astro.props;
+const { data, withoutId, isLast, isEven } = Astro.props;
 const lang = Astro.currentLocale as Lang;
 const t = useTranslations(lang);
 ---
 
-<BasicSection sectionType={data.type} withoutId={withoutId}>
-  <div class="flex flex-col md:flex-row md:gap-10 items-center">
-    {data.image && <div class="md:w-1/3 flex justify-center rounded-xl overflow-hidden bg-gray-100">
-      <Image class="w-full max-h-80 object-contain md:max-h-none" src={data.image.src} alt={data.image.alt || "Section ilustration"} />
-    </div>}
+<BasicSection sectionType={data.type} withoutId={withoutId} isLast={isLast}>
+  <div class={"flex flex-col md:gap-10 items-center md:flex-row" + (isEven ? "-reverse" : "")}>
     <div class={data.image ? "md:w-2/3" : "w-full"}>
       <h2 class="text-center">{t('section.' + data.type)}</h2>
       <slot />
     </div>
+    {data.image && <div class="md:w-1/3 flex justify-center rounded-xl overflow-hidden bg-gray-100">
+      <Image class="w-full max-h-80 object-contain md:max-h-none" src={data.image.src} alt={data.image.alt || "Section ilustration"} />
+    </div>}
   </div>  
 </BasicSection>

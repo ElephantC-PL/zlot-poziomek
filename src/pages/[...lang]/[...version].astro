@@ -41,36 +41,51 @@ const sections = await getSections(lang as Lang, version);
 	description="Lorem ipsum dolor sit amet"
 	heroImage={AboutHeroImage}	
 	>	
-	{sections.map(async (section) => {
+	{sections.map(async (section, index) => {
 		const { Content } = await render(section);	
 		switch(section.data.type) {
 			case 'about':
 				return (
-					<TopSection data={section.data}>  
+					<TopSection 
+						data={section.data} 
+						isLast={index === sections.length - 1}
+						isEven={index % 2 === 0}>  
 						<Content />            
 					</TopSection> 
 				);
 			case 'directions':
 				return (
-					<WithMapSection data={section.data}>  
+					<WithMapSection 
+						data={section.data} 
+						isLast={index === sections.length - 1}
+						isEven={index % 2 === 0}>  
 						<Content />            
 					</WithMapSection> 
 				);
 			case 'tracks':				
 				return (
-					<TracksSection data={section.data}>  
+					<TracksSection 
+						data={section.data} 
+						isLast={index === sections.length - 1}
+						isEven={index % 2 === 0}>  
 						<Content />            
 					</TracksSection> 
 				);
 			case 'contact':						
 				return (
-					<ContactSection data={section.data}>  
+					<ContactSection 
+						data={section.data} 
+						isLast={index === sections.length - 1}
+						isEven={index % 2 === 0}>  
 						<Content />            
 					</ContactSection> 
 				);
 			default:
 				return (
-					<DefaultSection data={section.data}>  
+					<DefaultSection 
+						data={section.data} 
+						isLast={index === sections.length - 1}
+						isEven={index % 2 === 0}>  
 						<Content />            
 					</DefaultSection> 
 				);

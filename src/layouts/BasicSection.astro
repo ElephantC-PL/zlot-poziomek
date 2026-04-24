@@ -2,7 +2,7 @@
 import type { Lang } from "../i18n/config";
 import { getTranslatedUrlFragment } from "../i18n/utils";
 
-const { sectionType, withoutId } = Astro.props;
+const { sectionType, withoutId, isLast } = Astro.props;
 const lang = Astro.currentLocale as Lang;
 const id = getTranslatedUrlFragment(lang, sectionType) ;
 
@@ -18,5 +18,5 @@ const id = getTranslatedUrlFragment(lang, sectionType) ;
 </style>
 <section class="basic-section scroll-mt-24 prose" id={withoutId ? undefined : id}>	
 	<slot />	
-	<div class="divider"></div>
+	{!isLast && <div class="divider"></div>}
 </section>

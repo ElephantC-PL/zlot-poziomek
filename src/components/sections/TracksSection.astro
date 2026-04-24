@@ -4,7 +4,7 @@ import { useTranslations } from "../../i18n/utils";
 import BasicSection from "../../layouts/BasicSection.astro";
 import MapIframe from "../MapIframe.astro";
 
-const { data } = Astro.props;
+const { data, isLast, isEven } = Astro.props;
 const lang = Astro.currentLocale as Lang;
 const t = useTranslations(lang);
 
@@ -21,7 +21,7 @@ type routesType = {
 }
 ---
 
-<BasicSection sectionType={data.type}>
+<BasicSection sectionType={data.type} isLast={isLast}>
     <h2 class="text-center">{t('section.' + data.type)}</h2>
     <div>        
         <slot />
