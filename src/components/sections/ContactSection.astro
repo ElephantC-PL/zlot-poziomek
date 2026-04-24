@@ -10,7 +10,7 @@ const t = useTranslations(lang);
 ---
 
 <BasicSection sectionType={data.type} isLast={isLast}>
-  <div class={"flex flex-col gap-8 items-center justify-center md:flex-row" + (isEven ? "-reverse" : "")}>
+  <div class={"flex flex-col gap-8 items-center justify-center pb-8 md:flex-row" + (isEven ? "-reverse" : "")}>
     <div class="flex flex-col gap-4 md:w-1/4">
         <h2 class="text-center">{t('section.' + data.type)}</h2>        
         <slot />
@@ -19,7 +19,7 @@ const t = useTranslations(lang);
             <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 72.93 122.88" width="32" height="32" style="enable-background:new 0 0 72.93 122.88" xml:space="preserve">
                 <style type="text/css">.st0{fill-rule:evenodd;clip-rule:evenodd;}</style>
                 <g>
-                    <path class="st0" d="M10.94,0h51.04C68,0,72.93,4.93,72.93,10.94v100.99c0,6.02-4.93,10.94-10.94,10.94l-51.04,0 C4.93,122.88,0,117.95,0,111.94V10.95C0,4.93,4.93,0,10.94,0L10.94,0z M36.46,100.1c3.91,0,7.09,3.17,7.09,7.09 c0,3.91-3.18,7.09-7.09,7.09c-3.92,0-7.09-3.17-7.09-7.09C29.37,103.28,32.55,100.1,36.46,100.1L36.46,100.1z M25.17,8.86h22.59 c0.16,0,0.3,0.14,0.3,0.3v3.3c0,0.16-0.14,0.3-0.3,0.3H25.17c0,0,0,0,0,0c-0.16,0-0.3-0.13-0.3-0.3v0l0-3.3c0,0,0,0,0,0 C24.87,8.99,25,8.86,25.17,8.86L25.17,8.86L25.17,8.86L25.17,8.86z M9.65,21.53h53.63c0.98,0,1.78,0.81,1.78,1.78v70.01 c0,0.97-0.81,1.78-1.78,1.78H9.65c-0.97,0-1.78-0.8-1.78-1.78V23.3C7.87,22.33,8.67,21.53,9.65,21.53L9.65,21.53z"/>
+                    <path fill="currentColor" class="st0" d="M10.94,0h51.04C68,0,72.93,4.93,72.93,10.94v100.99c0,6.02-4.93,10.94-10.94,10.94l-51.04,0 C4.93,122.88,0,117.95,0,111.94V10.95C0,4.93,4.93,0,10.94,0L10.94,0z M36.46,100.1c3.91,0,7.09,3.17,7.09,7.09 c0,3.91-3.18,7.09-7.09,7.09c-3.92,0-7.09-3.17-7.09-7.09C29.37,103.28,32.55,100.1,36.46,100.1L36.46,100.1z M25.17,8.86h22.59 c0.16,0,0.3,0.14,0.3,0.3v3.3c0,0.16-0.14,0.3-0.3,0.3H25.17c0,0,0,0,0,0c-0.16,0-0.3-0.13-0.3-0.3v0l0-3.3c0,0,0,0,0,0 C24.87,8.99,25,8.86,25.17,8.86L25.17,8.86L25.17,8.86L25.17,8.86z M9.65,21.53h53.63c0.98,0,1.78,0.81,1.78,1.78v70.01 c0,0.97-0.81,1.78-1.78,1.78H9.65c-0.97,0-1.78-0.8-1.78-1.78V23.3C7.87,22.33,8.67,21.53,9.65,21.53L9.65,21.53z"/>
                 </g>
             </svg> 
             <a class="text-xl" href={'tel:' + data.phone.replace(/[^\d+]/g, "")}>{data.phone}</a>
@@ -27,7 +27,7 @@ const t = useTranslations(lang);
         <div class="flex items-center gap-4">        
             <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 122.88 85.57" width="32" height="32">
                 <title>mail</title>
-                <path d="M3.8,0,62.48,47.85,118.65,0ZM0,80.52,41.8,38.61,0,4.53v76ZM46.41,42.37,3.31,85.57h115.9L78,42.37,64.44,53.94h0a3,3,0,0,1-3.78.05L46.41,42.37Zm36.12-3.84,40.35,42.33V4.16L82.53,38.53Z"/>
+                <path fill="currentColor" d="M3.8,0,62.48,47.85,118.65,0ZM0,80.52,41.8,38.61,0,4.53v76ZM46.41,42.37,3.31,85.57h115.9L78,42.37,64.44,53.94h0a3,3,0,0,1-3.78.05L46.41,42.37Zm36.12-3.84,40.35,42.33V4.16L82.53,38.53Z"/>
             </svg>   
             <a class="text-xl" href={'mailto:' + data.email}>{data.email}</a>
         </div>        

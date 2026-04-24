@@ -26,7 +26,7 @@ type routesType = {
     <div>        
         <slot />
     </div>
-    {data.days.map((day: dayType) =>(
+    {data.days && data.days.map((day: dayType) =>(
         <h3>{day.name}:</h3>      
         <div>
             {day.routes.map((route: routesType) => (
