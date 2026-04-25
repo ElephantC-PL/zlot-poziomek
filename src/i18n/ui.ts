@@ -5,7 +5,7 @@
 */
 export const ui = {
   pl: {
-    name: 'Zlot Poziomek 2026',    
+    name: 'Zlot Poziomek',    
     version: {
       vDefault: 'Domyślna',
       v2017: '2017',
@@ -49,7 +49,7 @@ export const ui = {
     }
   },
   en: {
-    name: 'Zlot Poziomek 2026',   
+    name: 'Zlot Poziomek',   
     version: {
       vDefault: 'Default',
       v2017: '2017',

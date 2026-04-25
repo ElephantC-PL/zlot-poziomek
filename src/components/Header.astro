@@ -4,8 +4,10 @@ import type { Lang } from '../i18n/config';
 import ThemeController from './ThemeController.astro';
 import MainMenu from './MainMenu.astro';
 import LangController from "./LangController.astro";
+import {CURRENT_VERSION} from '../version.config';
 
 const lang = Astro.currentLocale as Lang;
+
 
 const t = useTranslations(lang);
 
@@ -15,7 +17,14 @@ const t = useTranslations(lang);
       <label for="menu-drawer" tabindex="0" role="button" class="btn btn-ghost lg:hidden drawer-button">
         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
       </label>    
-   	<a href={getTranslatedUrl(lang)} class="btn btn-ghost text-xl">{t('name')}</a>
+   	<a href={getTranslatedUrl(lang)} class="btn btn-ghost ">
+      <h1 class="flex flex-col items-center text-center">
+        <span class="text-primary relative z-10 text-[9px] uppercase tracking-[1px] leading-none 
+          italic font-bold">{t('name')}</span>
+        <span class="text-secondary text-4xl font-bold leading-[0.9]
+          -mt-[4px] font-bold" >{t(`version.${CURRENT_VERSION}`)}</span>
+      </h1>
+    </a>
   </div>
   <div class="navbar-center hidden lg:flex">
     <ul class="menu menu-horizontal space-x-2">
