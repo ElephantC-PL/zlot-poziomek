@@ -28,10 +28,12 @@ export const ui = {
       getGpxFile: 'Pobierz trasę w postaci GPX'
     },
     footer: {
-      copyright: 'Twoje imię tutaj. Wszelkie prawa zastrzeżone.',
+      copyright: 'Zlot Poziomek PL',
       privacyPolicy: 'Polityka prywatności',
       cookies: 'Ciasteczka',
-      termsOfService: 'Regulamin'
+      termsOfService: 'Regulamin',
+      previousVersions: 'Strony poprzednich zlotów',
+      askWebsite: 'Masz pytania dotyczące strony? Napisz:',     
     },
     meta: {
       description: 'Witaj na mojej stronie!',
@@ -70,10 +72,12 @@ export const ui = {
       getGpxFile: 'Get the route as a GPX file'
     },
     footer: {
-      copyright: 'Your name here. All rights reserved.',
+      copyright: 'Zlot Poziomek PL',
       privacyPolicy: 'Privacy policy',
       cookies: 'Cookies',
-      termsOfService: 'Terms of Service'
+      termsOfService: 'Terms of Service',
+      previousVersions: 'Previous editions pages',
+      askWebsite: 'Have questions about the website? Contact us:'
     },
     meta: {
       description: 'Welcome to my website!',
