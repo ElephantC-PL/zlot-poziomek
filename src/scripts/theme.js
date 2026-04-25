@@ -1,7 +1,7 @@
 const ThemeManager = (() => {
   const THEME_KEY = 'user-theme';
-  const LIGHT = 'light';
-  const DARK = 'dark';
+  const LIGHT = 'fantasy';
+  const DARK = 'night';
 
   // Ustawia theme, synchronizuje checkbox i zapisuje w localStorage
   const apply = (theme) => {
