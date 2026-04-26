@@ -8,7 +8,7 @@ const lang = Astro.currentLocale as Lang;
 const today = new Date();
 const t = useTranslations(lang);
 ---
-<footer class="footer footer-horizontal footer-center bg-base-200 text-base-content p-10 row-gap-0">
+<footer class="footer border-t-2 border-warning footer-horizontal footer-center bg-base-200 text-base-content p-10 row-gap-0">
 	<nav>	
 		<h2 class="text-2xs">{t('footer.previousVersions')}:</h2>
 		<div class="flex flex-wrap gap-4 justify-center">	
