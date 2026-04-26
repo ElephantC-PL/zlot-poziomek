@@ -1,5 +1,12 @@
 ---
 type: cattering
+image: {
+    src: '../../../../assets/2026/image.jpg',
+    alt: 'Sample photo'
+} 
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Breakfasts and dinners are arranged independently by participants.
+
+On the Campus grounds, there is **GOSPODA POLSKA DOMASŁAWICE** [(map)](https://maps.app.goo.gl/vc5LKSjK7TjuX5gn8)
+

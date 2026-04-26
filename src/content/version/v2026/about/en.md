@@ -1,5 +1,19 @@
 ---
 type: about
+banner: {
+    src: '../../../../assets/2026/banner.png',
+    alt: 'Recumbent Rally 2026 banner'
+}
+image: {
+    src: '../../../../assets/2026/2026_logo.png',
+    alt: 'Recumbent Bike Rally 2026 - logo'
+} 
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+We invite you to the **International Gathering of Recumbent Bike Enthusiasts**, which will take place in the picturesque **Barycz Valley from July 1 to July 5, 2026**. 
+
+Main Rally Base – **Campus Domasławice, Domasławice 30, Lower Silesian Voivodeship**
+
+We encourage you to register via the [Registration Form](#registration).  
+For organizational reasons, please register **by June 1, 2026**.  
+Participants registered after this date are not guaranteed services or the rally package by the organizer.

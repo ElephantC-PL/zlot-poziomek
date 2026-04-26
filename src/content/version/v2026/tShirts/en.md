@@ -2,4 +2,15 @@
 type: tShirts
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+We encourage you to purchase a T-shirt and the rally participant package.  
+This is the only way you support the organization of the rally and receive a souvenir.
+
+**Note!**  
+**The rally package can only be reserved until June 1, 2026.**  
+**After this date, availability is not guaranteed.**
+
+The participant package includes:
+- rally T-shirt  
+- commemorative sticker  
+- surprise gadget  
+- sponsor materials
