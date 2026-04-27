@@ -1,38 +1,44 @@
-const ThemeManager = (() => {
-  const THEME_KEY = 'user-theme';
-  const LIGHT = 'winter';
-  const DARK = 'night';
+const THEME_KEY = 'user-theme';
+const LIGHT = 'winter';
+const DARK = 'night';
 
-  // Ustawia theme, synchronizuje checkbox i zapisuje w localStorage
-  const apply = (theme) => {
-    document.documentElement.setAttribute('data-theme', theme);
-    const checkbox = document.querySelector('.theme-controller');
-    if (checkbox) checkbox.checked = theme === DARK;
-    localStorage.setItem(THEME_KEY, theme);
-  };
+// Ustawia theme, synchronizuje checkbox i zapisuje w localStorage
+function applyTheme(theme) {
+  document.documentElement.setAttribute('data-theme', theme);
 
-  // Pobiera preferowany theme (localStorage lub system)
-  const getPreferredTheme = () => {
-    const stored = localStorage.getItem(THEME_KEY);
-    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    return stored || (prefersDark ? DARK : LIGHT);
-  };
+  const checkbox = document.querySelector('.theme-controller');
+  if (checkbox) {
+    checkbox.checked = theme === DARK;
+  }
 
-  const init = () => {
-    const theme = getPreferredTheme();
-    apply(theme);
+  localStorage.setItem(THEME_KEY, theme);
+}
 
-    // Obsługa zmiany checkboxa
-    const checkbox = document.querySelector('.theme-controller');
-    if (checkbox) {
-      checkbox.addEventListener('change', () => apply(checkbox.checked ? DARK : LIGHT));
-    }
-  };
+// Pobiera preferowany theme (localStorage lub system)
+function getPreferredTheme() {
+  const stored = localStorage.getItem(THEME_KEY);
+  const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
 
-  return { init, setTheme: apply };
-})();
+  return stored || (prefersDark ? DARK : LIGHT);
+}
 
-// Uruchomienie tylko po stronie klienta
-if (typeof window !== 'undefined') {
-  document.addEventListener('DOMContentLoaded', ThemeManager.init);
+// Główna funkcja inicjalizująca
+export function initThemeManager() {
+  if (typeof window === 'undefined') return;
+
+  const theme = getPreferredTheme();
+  applyTheme(theme);
+
+  const checkbox = document.querySelector('.theme-controller');
+
+  if (checkbox) {
+    checkbox.addEventListener('change', () => {
+      applyTheme(checkbox.checked ? DARK : LIGHT);
+    });
+  }
+}
+
+// Opcjonalny eksport do ręcznej zmiany motywu
+export function setTheme(theme) {
+  applyTheme(theme);
 }
