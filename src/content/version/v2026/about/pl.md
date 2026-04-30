@@ -1,7 +1,7 @@
 ---
 type: about
 banner: {
-    src: '../../../../assets/2026/banner.png',
+    src: '../../../../assets/2026/banner.jpg',
     alt: 'Zlot poziomek 2026 baner'
 }
 image: {

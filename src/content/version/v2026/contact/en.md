@@ -6,8 +6,8 @@ nameLines:
 email: 'tehen@gazeta.pl'
 phone: '+ 48 511 351 965'
 image: {
-    src: '../../../../assets/2026/image.jpg',
-    alt: 'Sample photo'
+    src: '../../../../assets/2026/jacek_lokomotywa.jpg',
+    alt: 'Tehen and the Locomotive'
 } 
 ---
 

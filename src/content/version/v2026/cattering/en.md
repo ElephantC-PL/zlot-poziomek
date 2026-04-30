@@ -1,8 +1,8 @@
 ---
 type: cattering
 image: {
-    src: '../../../../assets/2026/image.jpg',
-    alt: 'Sample photo'
+    src: '../../../../assets/2026/grill.png',
+    alt: 'Grill'
 } 
 ---
 

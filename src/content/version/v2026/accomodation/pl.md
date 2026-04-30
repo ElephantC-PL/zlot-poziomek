@@ -1,8 +1,8 @@
 ---
 type: accomodation
 image: {
-    src: '../../../../assets/2026/image.jpg',
-    alt: 'Jakieś zdjęcie'
+    src: '../../../../assets/2026/campus_domaslawice.jpg',
+    alt: 'Campus Domasławice'
 } 
 ---
 

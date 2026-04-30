@@ -1,5 +1,9 @@
 ---
 type: tShirts
+image: {
+    src: '../../../../assets/2026/tshirt.png',
+    alt: '2026 Rally T-Shirt'
+} 
 ---
 
 We encourage you to purchase a T-shirt and the rally participant package.  
