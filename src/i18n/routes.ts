@@ -10,34 +10,9 @@ import type {Lang } from "./config";
   You can use this for children of main translations object.
   Its separated for egsample for blog post itp.
 */
-export const blogRoutes: Routes = {
-  firstpost: {
-    pl: 'pierwszy-wpis',
-    en: 'first-post',   
-  },
-  secondpost: {
-    pl: 'drugi-wpis',
-    en: 'second-post',
-  },
-  thirdpost: {
-    pl: 'trzeci-wpis',
-    en: 'third-post',
-  },
-  markdownstyleguide: {
-    pl: 'stylowanie-markdown',
-    en: 'markdown-style-guide',
-  }
-};
+
 
 export const versionRoutes: Routes = {
-  'v2017': {
-    pl: '2017',
-    en: '2017',
-  },
-  'v2025': {
-    pl: '2025',
-    en: '2025',
-  },
   'v2026': {
     pl: '2026',
     en: '2026',
@@ -56,44 +31,7 @@ export const versionRoutes: Routes = {
   Must contain all languages from config.ts/LOCALES
   Structure correspond to url parts - children are parts after "/"
 */
-export const routes: Routes = {
-  aboutUs: {
-    pl: 'o-nas',
-    en: 'about-us',
-  },
-  blog: {
-    pl: 'blog',
-    en: 'blog',
-    children: blogRoutes
-  },
-  privacyPolicy: {
-    pl: 'polityka-prywatnosci',
-    en: 'privacy-policy',
-  }, 
-  cookies: {
-    pl: 'ciasteczka',
-    en: 'cookies',
-  },
-  termsOfService: {
-    pl: 'regulamin',
-    en: 'termsOfService',
-  },
-  deep: {
-    pl: 'gleboko',
-    en: 'deep',
-    children: {
-      deeper: {
-        pl: 'glebiej',
-        en: 'deeper',
-        children: {
-          nested: {
-            pl: 'zagniezdzone',
-            en: 'nested',
-          }
-        }
-      }
-    }
-  },
+export const routes: Routes = {   
   ...versionRoutes
 };
 

@@ -1,7 +1,6 @@
 
 ---
 import Layout from '../../layouts/Static.astro';
-import AboutHeroImage from '../../assets/blog-placeholder-about.jpg';
 import { getAllTranslatedPaths } from '../../i18n/utils';
 import { VERSIONS, CURRENT_VERSION } from '../../version.config';
 import { DEFAULT_LOCALE } from '../../i18n/config';
@@ -38,8 +37,7 @@ const sections = await getSections(lang as Lang, version);
 
 <Layout
 	title={translatedVersion}
-	description="Lorem ipsum dolor sit amet"
-	heroImage={AboutHeroImage}	
+	description="Lorem ipsum dolor sit amet"	
 	>	
 	{sections.map(async (section, index) => {
 		const { Content } = await render(section);	
