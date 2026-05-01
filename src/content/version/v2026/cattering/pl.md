@@ -2,7 +2,7 @@
 type: cattering
 image: {
     src: '../../../../assets/2026/grill.png',
-    alt: 'Gril'
+    alt: 'Grill'
 } 
 ---
 

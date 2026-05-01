@@ -16,10 +16,12 @@ export const versionRoutes: Routes = {
   'v2026': {
     pl: '2026',
     en: '2026',
+    cs: '2026',
   },
   'vDefault': {
     pl: 'domyslna',
     en: 'default',
+    cs: 'ingenious',
   }
 };
 
@@ -39,42 +41,52 @@ export const fragmentRoutes: Routes = {
   banner: {
     pl: 'baner',
     en: 'banner',
+    cs: 'banner',
   },
   about: {
     pl: 'o-zlocie',
     en: 'about',
+    cs: 'o-srazu',
   },
   directions: {
     pl: 'dojazd',
     en: 'directions',
+    cs: 'doprava',
   },
   accomodation: {
     pl: 'zakwaterowanie',
-    en: 'accomodation', 
+    en: 'accomodation',
+    cs: 'ubytovani',
   },
   cattering: {
     pl: 'wyzywienie',
     en: 'catering',
+    cs: 'vyzva',
   },
   schedule: {
     pl: 'program',
     en: 'schedule',
+    cs: 'rozpis',
   },  
   tracks: {
     pl: 'trasy',
     en: 'tracks',
+    cs: 'trasy',
   },
   registry: {
     pl: 'rejestracja',
     en: 'registry',
+    cs: 'registrace',
   },
   tShirts: {
     pl: 'koszulki',
     en: 't-shirts',
+    cs: 'tricka',
   },
   contact: {
     pl: 'kontakt',
     en: 'contact',
+    cs: 'kontakt',
   }
 };
 

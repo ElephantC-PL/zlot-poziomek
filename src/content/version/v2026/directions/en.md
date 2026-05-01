@@ -1,6 +1,6 @@
 ---
 type: directions
-map: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9955.53993593037!2d17.518366!3d51.405168!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4705556ce6035cf9%3A0xa3f3c82fee88faa7!2sCampus%20Domas%C5%82awice!5e0!3m2!1spl!2spl!4v1777047500122!5m2!1spl!2spl"
+map: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2488.974243542499!2d17.521427183050523!3d51.40352794811707!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4705556ce6035cf9%3A0xa3f3c82fee88faa7!2sCampus%20Domas%C5%82awice!5e0!3m2!1sen!2spl!4v1777636259745!5m2!1sen!2spl"
 ---
 
 **Campus Domasławice**  

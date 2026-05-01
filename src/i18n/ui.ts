@@ -7,9 +7,7 @@ export const ui = {
   pl: {
     name: 'Zlot Poziomek',    
     version: {
-      vDefault: 'Domyślna',
-      v2017: '2017',
-      v2025: '2025',
+      vDefault: 'Domyślna',    
       v2026: '2026'
     },
     section: {
@@ -51,9 +49,7 @@ export const ui = {
   en: {
     name: 'Zlot Poziomek',   
     version: {
-      vDefault: 'Default',
-      v2017: '2017',
-      v2025: '2025',
+      vDefault: 'Default', 
       v2026: '2026'    
     },
     section: {
@@ -90,6 +86,48 @@ export const ui = {
       unknown: 'No settings (user has not chosen)',
       accepted: 'Cookies accepted',
       rejected: 'Cookies rejected'
+    }
+  },
+  cs: {
+    name: 'Zlot Poziomek',   
+    version: {
+      vDefault: 'Domyšlná',
+      v2026: '2026'
+    },
+    section: {
+      banner: 'Baner',
+      about: 'O srazu',
+      directions: 'Doprava',
+      accomodation: 'Ubytování',
+      cattering: 'Výživa',
+      schedule: 'Rozpis',
+      tracks: 'Trasy',
+      registry: 'Registrace',
+      tShirts: 'Trička',
+      contact: 'Kontakt'
+    },
+      sectionsFragments: {
+      getGpxFile: 'Stáhnout trasu jako GPX soubor'
+    },
+    footer: {
+      copyright: 'Zlot Poziomek PL',
+      privacyPolicy: 'Zásady ochrany osobních údajů',
+      cookies: 'Cookies',
+      termsOfService: 'Podmínky služby',
+      previousVersions: 'Stránky předchozích zlotů',
+      askWebsite: 'Máte dotazy ohledně webu? Kontaktujte nás:'
+    },
+    meta: {
+      description: 'Vítejte na mé stránce!',
+    },
+    buttons: {
+      accept: 'Přijmout',
+      reject: 'Odmítnout'
+    },
+    cookiesStatus: {
+      unknown: 'Bez nastavení (uživatel nevybral)',
+      accepted: 'Cookies přijaty',
+      rejected: 'Cookies odmítnuty'
     }
   }
 } as const;
