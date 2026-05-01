@@ -2,44 +2,43 @@
 type: accomodation
 image: {
     src: '../../../../assets/2026/campus_domaslawice.jpg',
-    alt: 'Domasławice Campus'
-} 
+    alt: 'Campus Domasławice'
+}
 ---
 
-**Accommodation at the Main Rally Base (camping area) is currently available only in the form of space for a tent / caravan / camper van.**
+**Accommodation options at the Main Rally Base – [Campus Domasławice](https://www.domaslawice.pl/) are currently available only as a place for tents / caravans / camper vans.**
 
-These spots do not require prior reservation – registration and payment are handled **at the Campus reception desk** on the day of arrival, according to the general rules and price list.
+These places do not require reservation – registration and payment are made **at the Campus reception** on the day of arrival according to general rules and the price list.
 
-### CAMPSITE PRICE LIST
+### CAMPING PRICE LIST
 
-**Daily stay at the campsite*:**
+**Daily camping stay*:**
 
-- Adult fee – 30 PLN
-- Children’s fee** – 30 PLN
-- Tent pitch fee (1–2 persons) – 15 PLN
-- Tent pitch fee (3 persons or more) – 30 PLN
-- Caravan setup fee – 40 PLN
-- Camper van setup fee – 50 PLN
-- Passenger car parking fee – 10 PLN
-- Motorcycle parking fee – 10 PLN
-- Electricity connection – 45 PLN
-- Laundry – 20 PLN / hour
-- Dog stay – 5 PLN
+- Adults fee – 30 zł  
+- Children fee** – 30 zł  
+- Tent pitch (1–2 persons) – 15 zł  
+- Tent pitch (3+ persons) – 30 zł  
+- Caravan pitch – 40 zł  
+- Camper van pitch – 50 zł  
+- Car parking fee – 10 zł  
+- Motorcycle parking fee – 10 zł  
+- Electricity connection – 45 zł  
+- Laundry – 20 zł / h  
+- Dog stay – 5 zł  
 
-*The daily stay fee includes access to sanitary facilities, hot and cold water, Wi-Fi, the Rope Park, and sports facilities.  
-**Children aged 4 to 14 years old.
+*The daily fee includes access to sanitary facilities, hot and cold water, Wi-Fi, a rope park, and sports facilities.  
+**Children aged 4–14.
 
-### RURAL INITIATIVES CENTER
+### Accommodation at the RURAL INITIATIVES CENTRE (Centrum Inicjatyw Wiejskich)
 
-For those interested in indoor accommodation, an additional lodging option has been arranged in the village of Chełstów at the [RURAL INITIATIVES CENTER](https://mapy.com/s/pajegekadu).  
-This location is 11 km from the Main Rally Base – transportation must be arranged independently (watch out for local bars, where you may run into rally participants).  
+If there is interest in indoor accommodation, an additional lodging option has been arranged in the village of Chełstów at the [Rural Initiatives Centre (Centrum Inicjatyw Wiejskich)](https://gosir.twardogora.pl/obiekty/inne-obiekty/centrum-chelstow/) 
+[route map](https://mapy.com/s/pajegekadu).
 
-More information about the accommodation:  
-[https://gosir.twardogora.pl/obiekty/inne-obiekty/centrum-chelstow/](https://gosir.twardogora.pl/obiekty/inne-obiekty/centrum-chelstow/)
+The location is 11 km from the Main Rally Base – participants must arrange their own transport (be aware of local pubs where you may meet other rally participants).
 
-Reservations for this accommodation must be made with the rally organizer by phone at [511 351 965](tel:+48511351965) or via email at [tehen@gazeta.pl](mailto:tehen@gazeta.pl).
+Registration is required with the organiser at [511 351 965](tel:+48511351965) or via email [tehen@gazeta.pl](mailto:tehen@gazeta.pl).
 
-This accommodation option will be available only if there is a minimum of 15–20 interested participants.  
-Limited number of places available.
+This accommodation will be activated with a minimum of 15–20 participants.  
+Number of places is limited.
 
-There are also agritourism accommodations nearby, which you may book independently.
+Nearby, there are also agritourism accommodations available for independent booking.
