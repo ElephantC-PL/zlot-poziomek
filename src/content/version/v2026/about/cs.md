@@ -12,7 +12,7 @@ image: {
 
 Zveme vás na **Mezinárodní sraz milovníků lehokol**, který se uskuteční v malebném **údolí Barycze ve dnech od 1. do 5. července 2026**.
 
-Hlavní základna srazu – **Campus Domasławice, Domasławice 30, Dolnoslezské vojvodství**
+Hlavní základna srazu – **Campus Domasławice, Domasławice 30, Dolnoslezské vojvodství**.
 
 Zveme vás k registraci prostřednictvím [Registračního formuláře](#registrace).  
 Z organizačních důvodů vás prosíme o registraci **do 1. června 2026**.  

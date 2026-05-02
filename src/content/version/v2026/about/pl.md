@@ -10,10 +10,10 @@ image: {
 } 
 ---
 
-Zveme vás na **Mezinárodní sraz milovníků lehokol**, který se uskuteční v malebném **údolí Barycze ve dnech od 1. do 5. července 2026**.
+Zapraszamy na **Międzynarodowy Zlot Miłośników Rowerów Poziomych**, który odbędzie się w malowniczej **Dolinie Baryczy w dniach od 1 do 5 lipca 2026 roku**. 
 
-Hlavní základna srazu – **Campus Domasławice, Domasławice 30, Dolnoslezské vojvodství**
+Główna Baza Zlotu - **Campus Domasławice, Domasławice 30, województwo dolnośląskie**.
 
-Zveme vás k registraci prostřednictvím [Registračního formuláře](#rejestracja).  
-Z organizačních důvodů vás prosíme o registraci **do 1. června 2026**.  
-Osobám registrovaným po tomto termínu organizátor negarantuje služby ani srazový balíček.
+Zapraszamy do rejestracji poprzez [Arkusz Rejestracyjny](#rejestracja). 
+Ze względów organizacyjnych prosimy o zarejestrowanie się **do dnia 1 czerwca 2026**.  
+Osobom zarejestrowanym po tym terminie organizator nie gwarantuje świadczeń oraz pakietu zlotowego.

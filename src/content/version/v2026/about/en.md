@@ -12,7 +12,7 @@ image: {
 
 We invite you to the **International Gathering of Recumbent Bike Enthusiasts**, which will take place in the picturesque **Barycz Valley from July 1 to July 5, 2026**. 
 
-Main Rally Base – **Campus Domasławice, Domasławice 30, Lower Silesian Voivodeship**
+Main Rally Base – **Campus Domasławice, Domasławice 30, Lower Silesian Voivodeship**.
 
 We encourage you to register via the [Registration Form](#registry).  
 For organizational reasons, please register **by June 1, 2026**.  

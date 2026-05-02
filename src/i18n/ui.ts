@@ -5,7 +5,9 @@
 */
 export const ui = {
   pl: {
-    name: 'Zlot Poziomek',    
+    name: 'Zlot Poziomek',
+    title: 'Zlot Poziomek – Międzynarodowy Zlot Rowerów Poziomych',   
+    description: 'Zlot Poziomek 2026 – międzynarodowe spotkanie miłośników rowerów poziomych w malowniczej Dolinie Baryczy.', 
     version: {
       vDefault: 'Domyślna',    
       v2026: '2026'
@@ -26,7 +28,7 @@ export const ui = {
       getGpxFile: 'Pobierz trasę w postaci GPX'
     },
     footer: {
-      copyright: 'Zlot Poziomek PL',
+      copyright: 'Zlot Poziomek',
       privacyPolicy: 'Polityka prywatności',
       cookies: 'Ciasteczka',
       termsOfService: 'Regulamin',
@@ -47,7 +49,9 @@ export const ui = {
     }
   },
   en: {
-    name: 'Zlot Poziomek',   
+    name: 'Zlot Poziomek',
+    title: 'Zlot Poziomek – International Recumbent Bike Rally',   
+    description: 'Zlot Poziomek 2026 – an international gathering of recumbent bike enthusiasts in the picturesque Barycz Valley.',
     version: {
       vDefault: 'Default', 
       v2026: '2026'    
@@ -68,7 +72,7 @@ export const ui = {
       getGpxFile: 'Get the route as a GPX file'
     },
     footer: {
-      copyright: 'Zlot Poziomek PL',
+      copyright: 'Zlot Poziomek',
       privacyPolicy: 'Privacy policy',
       cookies: 'Cookies',
       termsOfService: 'Terms of Service',
@@ -89,7 +93,9 @@ export const ui = {
     }
   },
   cs: {
-    name: 'Zlot Poziomek',   
+    name: 'Zlot Poziomek',
+    title: 'Zlot Poziomek – Mezinárodní sraz lehokol',   
+    description: 'Zlot Poziomek 2026 – mezinárodní setkání nadšenců lehokolů v malířské Dolině Baryczy.',
     version: {
       vDefault: 'Domyšlná',
       v2026: '2026'
@@ -110,7 +116,7 @@ export const ui = {
       getGpxFile: 'Stáhnout trasu jako GPX soubor'
     },
     footer: {
-      copyright: 'Zlot Poziomek PL',
+      copyright: 'Zlot Poziomek',
       privacyPolicy: 'Zásady ochrany osobních údajů',
       cookies: 'Cookies',
       termsOfService: 'Podmínky služby',
