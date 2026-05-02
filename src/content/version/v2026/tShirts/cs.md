@@ -14,7 +14,7 @@ Pouze tímto způsobem podpoříte organizaci srazu a zároveň získáte památ
 **Po tomto datu negarantujeme dostupnost.**
 
 Účastnický balíček obsahuje:
-- srazové tričko
-- památeční samolepku
-- překvapivý dárek
-- materiály od sponzorů
+- Srazové tričko.
+- Památeční samolepku.
+- Překvapivý dárek.
+- Materiály od sponzorů.

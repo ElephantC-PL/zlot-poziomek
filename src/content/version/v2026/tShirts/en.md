@@ -14,7 +14,7 @@ This is the only way you support the organization of the rally and receive a sou
 **After this date, availability is not guaranteed.**
 
 The participant package includes:
-- rally T-shirt  
-- commemorative sticker  
-- surprise gadget  
-- sponsor materials
+- Rally T-shirt.  
+- Commemorative sticker.  
+- Surprise gadget.  
+- Sponsor materials.

@@ -8,5 +8,5 @@ image: {
 
 Breakfasts and dinners are arranged independently by participants.
 
-On the Campus grounds, there is **GOSPODA POLSKA DOMASŁAWICE** [(map)](https://maps.app.goo.gl/vc5LKSjK7TjuX5gn8)
+On the Campus grounds, there is Polish Inn Domasławice (Gospoda Polska Domasławice) [(map)](https://maps.app.goo.gl/vc5LKSjK7TjuX5gn8).
 

@@ -14,7 +14,7 @@ Tylko w ten sposób wspierasz organizację zlotu i otrzymujesz pamiątkę.
 **Po tym czasie nie gwarantujemy dostępności.** 
 
 Pakiet uczestnika zawiera: 
-- t-shirt zlotowy 
-- naklejka pamiątkowa  
-- gadżet niespodzianka 
-- materiały sponsorów 
+- T-shirt zlotowy.
+- Naklejka pamiątkowa.  
+- Gadżet niespodzianka. 
+- Materiały sponsorów. 
