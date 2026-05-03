@@ -7,8 +7,11 @@ const lang = Astro.currentLocale as Lang;
 
 ---
 
-<ul class="menu menu-horizontal">
-    <li><a href={getTranslatedUrl('pl', currentRoute)} class={'text-primary ' + (lang === 'pl' ? 'bg-base-300' : '') }>PL</a></li>
-    <li><a href={getTranslatedUrl('en', currentRoute)} class={'text-primary ' + (lang === 'en' ? 'bg-base-300' : '') }>EN</a></li>
-    <li><a href={getTranslatedUrl('cs', currentRoute)} class={'text-primary ' + (lang === 'cs' ? 'bg-base-300' : '') }>CS</a></li>
-</ul>
+<div class="dropdown dropdown-end mr-4">
+  <div tabindex="0" role="button" class="text-primary">{lang.toUpperCase()}</div>
+  <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box z-[1] w-30 p-2 shadow">
+    <li><a href={getTranslatedUrl('pl', currentRoute)} class={'text-primary ' + (lang === 'pl' ? 'bg-base-300' : '') }>Polski</a></li>
+    <li><a href={getTranslatedUrl('en', currentRoute)} class={'text-primary ' + (lang === 'en' ? 'bg-base-300' : '') }>English</a></li>
+    <li><a href={getTranslatedUrl('cs', currentRoute)} class={'text-primary ' + (lang === 'cs' ? 'bg-base-300' : '') }>Čeština</a></li>
+  </ul>
+</div>
