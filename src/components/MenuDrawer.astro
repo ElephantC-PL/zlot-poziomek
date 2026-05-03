@@ -14,4 +14,15 @@ import MainMenu from '../components/MainMenu.astro';
             <MainMenu/>
         </ul>
     </div>
-</div>		
+</div>	
+
+<script>
+  const drawerToggle = document.getElementById("menu-drawer") as HTMLInputElement | null;
+  const drawerLinks = document.querySelectorAll(".drawer-close");
+
+  drawerLinks.forEach(link => {
+    link.addEventListener("click", () => {
+      drawerToggle!.checked = false;
+    });
+  });
+</script>

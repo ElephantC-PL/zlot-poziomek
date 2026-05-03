@@ -7,7 +7,7 @@ const { href, class: className, ...props } = Astro.props;
 
 ---
 <li >
-	<a href={href} data-section={href} class="text-primary" {...props}>
+	<a href={href} data-section={href} class="text-primary drawer-close" {...props}>
 		<slot />
 	</a>
 </li>

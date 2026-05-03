@@ -7,7 +7,7 @@ const lang = Astro.currentLocale as Lang;
 
 ---
 
-<div class="dropdown dropdown-end mr-4">
+<div class="dropdown dropdown-end">
   <div tabindex="0" role="button" class="text-primary">{lang.toUpperCase()}</div>
   <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box z-[1] w-30 p-2 shadow">
     <li><a href={getTranslatedUrl('pl', currentRoute)} class={'text-primary ' + (lang === 'pl' ? 'bg-base-300' : '') }>Polski</a></li>
