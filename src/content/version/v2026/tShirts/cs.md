@@ -18,3 +18,9 @@ Pouze tímto způsobem podpoříte organizaci srazu a zároveň získáte památ
 - Památeční samolepku.
 - Překvapivý dárek.
 - Materiály od sponzorů.
+
+### Dámské velikosti
+![Dámské velikosti](../../../../assets/2026/tabela_rozmiarowa_damska2.png)
+
+### Pánské velikosti
+![Pánské velikosti](../../../../assets/2026/tabela_rozmiarowa_meska2.png)

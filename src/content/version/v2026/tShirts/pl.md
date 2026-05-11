@@ -18,3 +18,9 @@ Pakiet uczestnika zawiera:
 - Naklejka pamiątkowa.  
 - Gadżet niespodzianka. 
 - Materiały sponsorów. 
+
+### Rozmiarówka damska
+![Rozmiarówka damska](../../../../assets/2026/tabela_rozmiarowa_damska2.png)
+
+### Rozmiarówka męska
+![Rozmiarówka męska](../../../../assets/2026/tabela_rozmiarowa_meska2.png)
