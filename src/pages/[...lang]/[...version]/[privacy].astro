@@ -1,18 +1,8 @@
 
 ---
 import Layout from '../../../layouts/Legal.astro';
-import { getAllTranslatedPaths } from '../../../i18n/utils';
-import { VERSIONS, CURRENT_VERSION } from '../../../version.config';
-import { DEFAULT_LOCALE } from '../../../i18n/config';
-import DefaultSection from '../../../components/sections/DefaultSection.astro';
 import { getEntry, render } from 'astro:content';
-import { getSections, getMenu } from '../../../utilities/sections';
 import type { Lang } from '../../../i18n/config';
-import WithMapSection from '../../../components/sections/DirectionsSection.astro';
-import TracksSection from '../../../components/sections/TracksSection.astro';
-import ContactSection from '../../../components/sections/ContactSection.astro';
-import TopSection from '../../../components/sections/TopSection.astro';
-import RegistrySection from '../../../components/sections/RegistrySection.astro';
 import { AstroError } from 'astro/errors';
 
 type ContentData = {
