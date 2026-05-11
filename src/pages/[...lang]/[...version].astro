@@ -12,6 +12,7 @@ import WithMapSection from '../../components/sections/DirectionsSection.astro';
 import TracksSection from '../../components/sections/TracksSection.astro';
 import ContactSection from '../../components/sections/ContactSection.astro';
 import TopSection from '../../components/sections/TopSection.astro';
+import RegistrySection from '../../components/sections/RegistrySection.astro';
 
 
 
@@ -77,6 +78,15 @@ const sections = await getSections(lang as Lang, version);
 						isEven={index % 2 === 0}>  
 						<Content />            
 					</ContactSection> 
+				);
+			case 'registry':						
+				return (
+					<RegistrySection 
+						data={section.data} 
+						isLast={index === sections.length - 1}
+						isEven={index % 2 === 0}>  
+						<Content />            
+					</RegistrySection> 
 				);
 			default:
 				return (

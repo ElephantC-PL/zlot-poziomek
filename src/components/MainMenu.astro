@@ -9,13 +9,13 @@ const lang = Astro.currentLocale as Lang;
 const t = useTranslations(lang);
 
 const path = getRouteFromTranslatedPath(Astro.url) ?? [];
-const isNotVersionPage = path.length > 0 && !VERSIONS.includes(path[0]);
+const isNotVersionPage = path.length > 0 && !VERSIONS.includes(path.at(-1) || '');
 
 const version = VERSIONS.find(v => v === path[0]) || CURRENT_VERSION;
 const menu =  await getMenu(lang, version);
 ---
 
-{      
+{          
     menu.map(item => (
         <HeaderLink href={
             (isNotVersionPage ? getTranslatedUrl(lang, []) : '')+

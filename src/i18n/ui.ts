@@ -29,8 +29,7 @@ export const ui = {
     },
     footer: {
       copyright: 'Zlot Poziomek',
-      privacyPolicy: 'Polityka prywatności',
-      cookies: 'Ciasteczka',
+      privacyPolicyAndCookies: 'Polityka prywatności i cookies',     
       termsOfService: 'Regulamin',
       previousVersions: 'Strony poprzednich zlotów',
       askWebsite: 'Masz pytania dotyczące strony? Napisz:',     
@@ -40,7 +39,8 @@ export const ui = {
     },
     buttons: {
       accept: 'Akceptuj',
-      reject: 'Odrzuć'
+      reject: 'Odrzuć',
+      registryForm: 'Formularz rejestracyjny',
     },
     cookiesStatus: {
       unknown: 'Brak ustawień (użytkownik nie wybrał)',
@@ -73,8 +73,7 @@ export const ui = {
     },
     footer: {
       copyright: 'Zlot Poziomek',
-      privacyPolicy: 'Privacy policy',
-      cookies: 'Cookies',
+      privacyPolicyAndCookies: 'Privacy policy and cookies',
       termsOfService: 'Terms of Service',
       previousVersions: 'Previous editions pages',
       askWebsite: 'Have questions about the website? Contact us:'
@@ -84,7 +83,8 @@ export const ui = {
     },
     buttons: {
       accept: 'Accept',
-      reject: 'Reject'
+      reject: 'Reject',
+      registryForm: 'Registry form',
     },
     cookiesStatus: {
       unknown: 'No settings (user has not chosen)',
@@ -117,8 +117,7 @@ export const ui = {
     },
     footer: {
       copyright: 'Zlot Poziomek',
-      privacyPolicy: 'Zásady ochrany osobních údajů',
-      cookies: 'Cookies',
+      privacyPolicyAndCookies: 'Zásady ochrany osobních údajů',      
       termsOfService: 'Podmínky služby',
       previousVersions: 'Stránky předchozích zlotů',
       askWebsite: 'Máte dotazy ohledně webu? Kontaktujte nás:'
@@ -128,7 +127,8 @@ export const ui = {
     },
     buttons: {
       accept: 'Přijmout',
-      reject: 'Odmítnout'
+      reject: 'Odmítnout',
+      registryForm: 'Registrační formulář',
     },
     cookiesStatus: {
       unknown: 'Bez nastavení (uživatel nevybral)',

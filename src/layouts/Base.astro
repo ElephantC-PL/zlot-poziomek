@@ -8,17 +8,12 @@ import type { Lang } from '../i18n/config';
 import "../assets/app.css";
 import MenuDrawer from '../components/MenuDrawer.astro';
 
-interface Props {
-  title?: string;
-  description?: string; 
-}
 const lang = Astro.currentLocale as Lang;
-const { title = "My Website", description = "" } = Astro.props;
 ---
 
 <html lang={lang} data-theme="night">
 	<head>
-		<BaseHead title={title} description={description} />		
+		<BaseHead />		
 	</head>
 
 	<body>

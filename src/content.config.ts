@@ -80,6 +80,10 @@ const version = defineCollection({
 				email: z.string().email(),
 				phone: z.string(),
 			}),
+			z.object({
+				type: z.literal('privacy'),
+				title: z.string(), 
+			}),
 		]),
 });
 

@@ -7,14 +7,10 @@ import type { Lang } from '../i18n/config';
 import { useTranslations } from '../i18n/utils';
 
 interface Props {
-	title: string;
-	description: string;
 	image?: ImageMetadata;
 }
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
-
-const { title, description } = Astro.props;
 
 const lang = Astro.currentLocale as Lang;
 const t = useTranslations(lang);
@@ -27,12 +23,6 @@ const t = useTranslations(lang);
 <link rel="apple-touch-icon" href="/icons/favicon-180.png" sizes="180x180" type="image/png" />
 <link rel="manifest" href="/manifest.webmanifest" />
 <link rel="sitemap" href="/sitemap-index.xml" />
-<link
-	rel="alternate"
-	type="application/rss+xml"
-	title={t('name')}
-	href={new URL('rss.xml', Astro.site)}
-/>
 <meta name="generator" content={Astro.generator} />
 
 <!-- Font preloads -->
@@ -44,20 +34,20 @@ const t = useTranslations(lang);
 
 <!-- Primary Meta Tags -->
 <title>{t('title')}</title>
-<meta name={t('title')} content={title} />
-<meta name={t('meta.description')} content={description} />
+<meta name='title' content={t('title')} />
+<meta name='description' content={t('meta.description')} />
 
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content="website" />
 <meta property="og:url" content={Astro.url} />
-<meta property="og:title" content={title} />
-<meta property="og:description" content={description} />
+<meta property="og:title" content={t('title')} />
+<meta property="og:description" content={t('meta.description')} />
 
 <!-- Twitter -->
 <meta property="twitter:card" content="summary_large_image" />
 <meta property="twitter:url" content={Astro.url} />
-<meta property="twitter:title" content={title} />
-<meta property="twitter:description" content={description} />
+<meta property="twitter:title" content={t('title')} />
+<meta property="twitter:description" content={t('meta.description')} />
 
 <script>
   (function() {

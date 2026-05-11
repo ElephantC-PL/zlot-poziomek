@@ -17,11 +17,25 @@ export const versionRoutes: Routes = {
     pl: '2026',
     en: '2026',
     cs: '2026',
+    children: {
+      'privacy': {
+        pl: 'polityka-prywatnosci',  
+        en: 'privacy-policy',
+        cs: 'ochrana-soukromi',
+      }
+    }
   },
   'vDefault': {
     pl: 'domyslna',
     en: 'default',
     cs: 'ingenious',
+    children: {
+      'privacy': {
+        pl: 'polityka-prywatnosci',  
+        en: 'privacy-policy',
+        cs: 'ochrana-soukromi',
+      }
+    }
   }
 };
 
