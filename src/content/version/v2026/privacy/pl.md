@@ -61,11 +61,11 @@ Dane będą przechowywane wyłącznie przez okres niezbędny do organizacji i ro
 
 ---
 
-### 7. Odbiorcy danych
+## 7. Odbiorcy danych
 
 Dane mogą być przetwarzane z wykorzystaniem usług podmiotów zewnętrznych, w szczególności:
 
-- usług formularzy online dostarczanych przez :contentReference[oaicite:0]{index=0},
+- usług formularzy online dostarczanych przez Google,
 - usług hostingowych,
 - narzędzi komunikacyjnych niezbędnych do organizacji wydarzenia.
 
@@ -75,7 +75,7 @@ Podmioty te przetwarzają dane zgodnie ze swoimi regulaminami i politykami prywa
 
 ### 8. Mapy i usługi zewnętrzne
 
-Strona korzysta z osadzonych map :contentReference[oaicite:1]{index=1} oraz linków do serwisu :contentReference[oaicite:2]{index=2}.
+Strona korzysta z osadzonych map Google oraz linków do serwisu Mapy.com.
 
 Korzystanie z tych usług może wiązać się z przetwarzaniem danych technicznych przez ich operatorów, zgodnie z ich własnymi zasadami prywatności.
 
@@ -124,4 +124,3 @@ W sprawach dotyczących prywatności oraz danych osobowych prosimy o kontakt:
 **Jacek Wierzchowski "Tehen"**  
 tel.: +48 511 351 965  
 e-mail: tehen@gazeta.pl
-

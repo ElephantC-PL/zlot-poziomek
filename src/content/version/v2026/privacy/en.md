@@ -61,11 +61,11 @@ Data will be stored only for the period necessary to organize and settle the eve
 
 ---
 
-### 7. Data Recipients
+## 7. Data Recipients
 
 Data may be processed using services provided by external entities, in particular:
 
-- online form services,
+- online form services provided by Google,
 - hosting services,
 - communication tools necessary for organizing the event.
 
@@ -75,7 +75,7 @@ These entities process data in accordance with their own terms and privacy polic
 
 ### 8. Maps and External Services
 
-The website uses embedded maps and links to external services.
+The website uses embedded Google Maps and links to the Mapy.com service.
 
 Using these services may involve the processing of technical data by their operators in accordance with their own privacy rules.
 

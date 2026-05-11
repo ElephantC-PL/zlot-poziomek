@@ -13,22 +13,10 @@ const { title } = Astro.props;
 		.prose {
 			width: 720px;
 			max-width: calc(100% - 2em);
-			margin: auto;
-			padding: 1em;
-			color: rgb(var(--gray-dark));
-            font-family: 'Times New Roman', Times, serif;
-		}
-		.title {
-			margin-bottom: 1em;
-			padding: 1em 0;
-			text-align: center;
-			line-height: 1;
-		}
-		.title h1 {
-			margin: 0 0 0.5em 0;
+			margin: auto;						
 		}	
 	</style>		
-	<div class="prose">
+	<div class="prose pt-10 pb-4">
 		<div class="title">				
 			<h2>{title}</h2>
 			<hr />

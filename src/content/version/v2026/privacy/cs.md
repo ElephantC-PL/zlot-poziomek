@@ -61,11 +61,11 @@ Právním základem zpracování údajů je:
 
 ---
 
-### 7. Příjemci údajů
+## 7. Příjemci údajů
 
 Údaje mohou být zpracovávány s využitím služeb externích subjektů, zejména:
 
-- služeb online formulářů,
+- služeb online formulářů poskytovaných společností Google,
 - hostingových služeb,
 - komunikačních nástrojů nezbytných pro organizaci akce.
 
@@ -75,7 +75,7 @@ Tyto subjekty zpracovávají údaje v souladu se svými vlastními podmínkami a
 
 ### 8. Mapy a externí služby
 
-Web používá vložené mapy a odkazy na externí služby.
+Web používá vložené mapy Google a odkazy na službu Mapy.com.
 
 Používání těchto služeb může být spojeno se zpracováním technických údajů jejich provozovateli podle jejich vlastních pravidel ochrany soukromí.
 
