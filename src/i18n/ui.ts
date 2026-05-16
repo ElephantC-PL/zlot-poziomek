@@ -41,6 +41,7 @@ export const ui = {
       accept: 'Akceptuj',
       reject: 'Odrzuć',
       registryForm: 'Formularz rejestracyjny',
+      saveSettings: 'Zapisz ustawienia'
     },
     cookiesStatus: {
       unknown: 'Brak ustawień (użytkownik nie wybrał)',
@@ -85,6 +86,7 @@ export const ui = {
       accept: 'Accept',
       reject: 'Reject',
       registryForm: 'Registry form',
+      saveSettings: 'Save Settings'
     },
     cookiesStatus: {
       unknown: 'No settings (user has not chosen)',
@@ -129,6 +131,7 @@ export const ui = {
       accept: 'Přijmout',
       reject: 'Odmítnout',
       registryForm: 'Registrační formulář',
+      saveSettings: 'Uložit nastavení'
     },
     cookiesStatus: {
       unknown: 'Bez nastavení (uživatel nevybral)',
