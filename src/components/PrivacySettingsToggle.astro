@@ -14,10 +14,10 @@ const { label } = Astro.props as Props;
 
 <div class="form-control w-full">
     <label class="label cursor-pointer justify-start gap-3">      
-        <input type="checkbox" class="toggle toggle-primary toggle-sm" checked="checked" />
+        <input data-privacy-toggle type="checkbox" class="toggle toggle-primary toggle-sm" />
         <span class="label-text">{label}</span>
     </label>
 </div>
 <div class="w-full">
-    <button class="btn btn-outline btn-sm btn-primary self-start mt-2">{t('buttons.saveSettings')}</button>
+    <button data-privacy-action="save" class="btn btn-outline btn-sm btn-primary self-start mt-2">{t('buttons.saveSettings')}</button>
 </div>
