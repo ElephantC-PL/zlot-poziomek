@@ -1,4 +1,5 @@
 ---
+import PrivacyConsentModal from '../components/PrivacyConsentModal.astro';
 import BaseLayout from './Base.astro';
 
 interface Props {
@@ -14,5 +15,6 @@ interface Props {
 
 ---
 <BaseLayout>
-	<slot />	
+	<slot />   
+    <PrivacyConsentModal/> 
 </BaseLayout>
