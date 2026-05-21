@@ -7,6 +7,7 @@ import CookieConsent from '../components/CookieConsent.astro';
 import type { Lang } from '../i18n/config';
 import "../assets/app.css";
 import MenuDrawer from '../components/MenuDrawer.astro';
+import PrivacyConsentModal from '../components/PrivacyConsentModal.astro';
 
 const lang = Astro.currentLocale as Lang;
 ---
@@ -21,21 +22,20 @@ const lang = Astro.currentLocale as Lang;
 			<Header/>				
 			<main class="pt-16 pb-8">				
 				<slot/>
+				<button class="btn" onclick="privacy_consent_modal.showModal()">open modal</button>
+				<PrivacyConsentModal/>
 			</main>
 			<Footer />
 			<!-- <CookieConsent/> -->
 		</MenuDrawer>
 	</body>
 	<script>
-    import { initScrollSpy } from "../scripts/scrollSpy.ts";
-    initScrollSpy();
-	</script>
-	<script>
-    import { initThemeManager } from "../scripts/theme.js";
-    initThemeManager();
-	</script>
-	<script>
-	import {  initPrivacySettings } from '../scripts/privacySettings.ts';
-	initPrivacySettings();
+		import { initScrollSpy } from "../scripts/scrollSpy.ts";
+		import { initThemeManager } from "../scripts/theme.js";
+		import { initPrivacySettings } from '../scripts/privacySettings.ts';
+   		
+		initScrollSpy();
+		initThemeManager();
+		initPrivacySettings();
 	</script>
 </html>

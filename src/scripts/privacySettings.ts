@@ -95,7 +95,21 @@ function applyConsent(
   updateToggleState();
   updateStatus();
 
-  // opcjonalny event globalny
+  /**
+   * Close modal after decision
+   */
+
+  const modal =
+    document.querySelector<HTMLDialogElement>(
+      '#privacy_consent_modal'
+    );
+
+  modal?.close();
+
+  /**
+   * Optional global event
+   */
+
   window.dispatchEvent(
     new CustomEvent(
       'privacy-settings-changed',
@@ -104,6 +118,25 @@ function applyConsent(
       }
     )
   );
+}
+
+function initPrivacyModal() {
+  /**
+   * If no decision exists
+   * show modal automatically
+   */
+
+  const consent =
+    getPrivacyConsent();
+
+  if (consent !== null) return;
+
+  const modal =
+    document.querySelector<HTMLDialogElement>(
+      '#privacy_consent_modal'
+    );
+
+  modal?.showModal();
 }
 
 /**
@@ -117,6 +150,12 @@ export function initPrivacySettings() {
 
   updateToggleState();
   updateStatus();
+
+  /**
+   * Auto-open modal
+   */
+
+  initPrivacyModal();
 
   /**
    * Accept buttons
