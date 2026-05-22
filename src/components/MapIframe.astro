@@ -1,5 +1,16 @@
 ---
 const { url, ...props } = Astro.props;
 ---
-
-<iframe class="rounded-xl overflow-hidden bg-gray-100 max-w-full" src={url} width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<div data-google-map-wrapper>
+    <div 
+        data-google-map-placeholder
+        class="rounded-xl overflow-hidden bg-gray-100 w-[600px] h-[450px] max-w-full bg-color-[pink]">
+    </div>
+    <iframe 
+        data-google-map-iframe
+        class="rounded-xl hidden overflow-hidden bg-gray-100 max-w-full" 
+        data-src={url} width="600" height="450" 
+        style="border:0;" allowfullscreen="" loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+</div>

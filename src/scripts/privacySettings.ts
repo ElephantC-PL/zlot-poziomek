@@ -94,6 +94,7 @@ function applyConsent(
 
   updateToggleState();
   updateStatus();
+  initGoogleMaps();
 
   /**
    * Close modal after decision
@@ -139,6 +140,54 @@ function initPrivacyModal() {
   modal?.showModal();
 }
 
+function initGoogleMaps() {
+  const wrappers =
+    document.querySelectorAll<HTMLElement>(
+      '[data-google-map-wrapper]'
+    );
+
+  wrappers.forEach((wrapper) => {
+    const iframe =
+      wrapper.querySelector<HTMLIFrameElement>(
+        '[data-google-map-iframe]'
+      );
+
+    const placeholder =
+      wrapper.querySelector<HTMLElement>(
+        '[data-google-map-placeholder]'
+      );
+
+    if (!iframe) return;
+
+    /**
+     * Consent accepted
+     */
+
+    if (hasAcceptedPrivacy()) {
+      /**
+       * Lazy inject src
+       */
+
+      if (!iframe.src) {
+        iframe.src =
+          iframe.dataset.src || '';
+      }
+
+      iframe.classList.remove('hidden');
+
+      placeholder?.classList.add(
+        'hidden'
+      );
+    } else {
+      iframe.classList.add('hidden');
+
+      placeholder?.classList.remove(
+        'hidden'
+      );
+    }
+  });
+}
+
 /**
  * INIT
  */
@@ -157,9 +206,15 @@ export function initPrivacySettings() {
 
   initPrivacyModal();
 
+ /**
+   * Run maps
+   */
+
+  initGoogleMaps();
+
   /**
    * Accept buttons
-   */
+   */  
 
   const acceptButtons =
     document.querySelectorAll<HTMLElement>(
