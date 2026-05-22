@@ -1,44 +1,49 @@
+---
+import { getEntry, render } from 'astro:content';
+import type { Lang } from '../i18n/config';
+import { AstroError } from 'astro/errors';
+import { useTranslations } from '../i18n/utils';
+
+type ContentData = {
+  title: string;  
+  confirmButton?: string;
+};
+
+const lang = Astro.currentLocale as Lang;
+const t = useTranslations(lang);
+
+const slug = `v2026/privacy-consent-modal/${lang}`;
+const entry = await getEntry("version", slug);
+
+if (!entry) {
+  throw new AstroError(`No content found for slug=${slug}`);
+}
+
+const {title, confirmButton} = (entry.data as ContentData);
+
+const { Content } = await render(entry);
+---
+
 <dialog id="privacy_consent_modal" class="modal">
     <div class="modal-box max-w-xl">
         <h3 class="text-2xl font-bold mb-4">
-          Prywatność i usługi zewnętrzne
+          {title}
         </h3>
         <div class="space-y-4 text-base-content/80">
-            <p>
-                Ta strona korzysta z usług Google
-                (<strong>Google Maps</strong> oraz
-                <strong>Google Forms</strong>),
-                które mogą wykorzystywać pliki cookies
-                i przetwarzać dane techniczne.
-            </p>
-            <p>Akceptacja umożliwia:</p>
-            <ul class="list-disc pl-6">
-                <li>wyświetlanie map wydarzenia,</li>
-                <li>korzystanie z formularza rejestracyjnego.</li>
-            </ul>
-            <p>
-                Po odrzuceniu te elementy
-                pozostaną niedostępne.
-            </p>
-            <a
-                href="/2026/polityka-prywatnosci"
-                class="link link-primary"
-            >
-                Polityka prywatności i ustawienia
-            </a>
+            <Content/>
         </div>
         <div class="modal-action">
             <button
                 class="btn btn-outline"
                 data-privacy-action="reject"
             >
-                Odrzuć
+                {t('buttons.reject')}
             </button>
             <button
                 class="btn btn-primary"
                 data-privacy-action="accept"
             >
-                Akceptuję zewnętrzne usługi
+                {confirmButton}
             </button>
         </div>
     </div>

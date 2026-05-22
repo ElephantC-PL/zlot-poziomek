@@ -13,7 +13,7 @@ const version = defineCollection({
 				}).optional(),
 			}),
 			z.object({
-				type: z.literal('about'),   
+				type: z.literal('about'),
 				image: z.object({
 					src: image(),   
 					alt: z.string(), 
@@ -72,7 +72,7 @@ const version = defineCollection({
 			}),
 			z.object({
 				type: z.literal('contact'),    
-			image: z.object({
+				image: z.object({
 					src: image(),   
 					alt: z.string(), 
 				}).optional(),		
@@ -83,6 +83,11 @@ const version = defineCollection({
 			z.object({
 				type: z.literal('privacy'),
 				title: z.string(), 
+			}),
+			z.object({
+				type: z.literal('privacyConsentModal'),
+				title: z.string(), 
+				confirmButton: z.string(),
 			}),
 		]),
 });
