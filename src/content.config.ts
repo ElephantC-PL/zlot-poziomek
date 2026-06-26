@@ -50,8 +50,8 @@ const version = defineCollection({
 					z.object({
 						name: z.string(),
 						routes: z.array(
-							z.object({
-								name: z.string().optional(),
+							z.object({															
+								desc: z.string().optional(),
 								map: z.string().url().optional(),
 								link: z.string().url().optional(),
 								gpx: z.string().optional(),
