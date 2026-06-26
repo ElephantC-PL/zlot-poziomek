@@ -1,7 +1,29 @@
 ---
 type: tracks
+days: [
+    {
+        name: 'Czwartek 2.07.2026',
+        routes: [            
+            {                
+                map: 'https://mapy.com/s/guhoregesa'
+            }
+        ]
+    },
+    {
+        name: 'Piątek 3.07.2026',
+        routes: [
+            {               
+                map: 'https://mapy.com/s/camokerova'                
+            }
+        ]
+    },
+        {
+        name: 'Sobota 4.07.2026',
+        routes: [
+            {                
+                map: 'https://mapy.com/s/puvesujeno'
+            }
+        ]
+    },
+]
 ---
-
-Jesteśmy aktualnie w drodze aby przygotować dla Was jak najlepsze trasy, które ogłosimy wkrótce.
- 
-Mimo dużych starań bądźcie gotowi na nowe doznania rowerowe – Dolina Baryczy to nie tylko piękne odcinki asfaltowe ale również urocze odcinki szutrowe, których nie będziemy unikać.
