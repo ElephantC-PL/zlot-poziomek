@@ -3,6 +3,7 @@ import type { Lang } from "../../i18n/config";
 import { useTranslations } from "../../i18n/utils";
 import BasicSection from "../../layouts/BasicSection.astro";
 import MapIframe from "../MapIframe.astro";
+import { marked } from 'marked';
 
 const { data, isLast, isEven } = Astro.props;
 const lang = Astro.currentLocale as Lang;
@@ -14,7 +15,7 @@ type dayType = {
 };
 
 type routesType = {
-    name?: string;
+    desc?: string;
     map?: string;
     link?: string;
     gpx?: string;
@@ -30,12 +31,23 @@ type routesType = {
         <h3>{day.name}:</h3>      
         <div>
             {day.routes.map((route: routesType) => (
-             <div>
-                {route.name && <h4>{route.name}:</h4>}  
-                {route.map && <MapIframe url={route.map} />} 
-                {route.link && <a href={route.link} target="_blank">{route.link}</a>}
-                {route.gpx && <a href={route.gpx} download={route.gpx.split("/").pop()}>{t('sectionsFragments.getGpxFile')}</a>}
-            </div>  
+               <div class={"flex flex-col md:gap-10 items-center md:flex-row" + (isEven ? "-reverse" : "")}>
+                    {route.desc && 
+                        <div class={route.map && route.desc ? "md:w-1/2" : "w-full"}>                                                  
+                            <Fragment set:html={marked.parse(route.desc)}/>
+                        </div>
+                    }
+                    {route.map && 
+                        <div class={(route.map && route.desc ? "md:w-1/2" : "w-full") +" flex justify-center "}>
+                            <MapIframe url={route.map} />
+                        </div>
+                    }
+                </div>     
+            //  <div>                
+            //     {route.map && <MapIframe url={route.map} />} 
+            //     {route.link && <a href={route.link} target="_blank">{route.link}</a>}
+            //     {route.gpx && <a href={route.gpx} download={route.gpx.split("/").pop()}>{t('sectionsFragments.getGpxFile')}</a>}
+            // </div>  
          ))}     
         </div>
     ))} 
